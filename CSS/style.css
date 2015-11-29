@@ -8,14 +8,14 @@ body {
   margin-left: auto;
   margin-right: auto;
   text-align: center;
-  background:
+  /*background:
    linear-gradient(
     rgba(211, 211, 211, 0.5),
     rgba(211, 211, 211, 0.5)
   ),
   url(../images/background-image.jpg);
   background-position: top;
-  background-size: 100%;
+  background-size: 100%;*/
 }
 
 a {
@@ -40,6 +40,18 @@ a {
   margin: 15% 0px 0px;
   padding:0;
   text-align: center;
+}
+
+.small-logo {
+  float: left;
+  font-family: 'Brush Script MT', 'Arial', sans-serif;
+  font-size:50px;
+  font-weight:500;
+  background-color: #654F6F;
+  margin: 0 0 0 0;
+  padding: 15px;
+  border-radius: 50%;
+  text-align: left;
 }
 
 .moto {
@@ -135,26 +147,23 @@ footer {
   .navigation {
     padding: 0;
   }
+
   label[for="nav-trigger"] {
       position: fixed;
-      top: 15px;
+      top: 15%;
       left: 15px;
       z-index: 2;
-  }
-  label[for="nav-trigger"] {
       width: 50px;
       height: 50px;
       cursor: pointer;
       display: inline-block;
       float: right;
-      height:50px;
-      width: 50px;
       background:linear-gradient(to bottom, #1C0E21 0%, #1C0E21 20%, transparent 20%, transparent 40%, #1C0E21 40%, #1C0E21 60%, transparent 60%,transparent 80%, #1C0E21 80%, #1C0E21 100%);
       background-size: contain;
 
       animation-name: pulse;
-      animation-duration: 1.5s; 
-      animation-timing-function: ease-in-out; 
+      animation-duration: 1.5s;
+      animation-timing-function: ease-in-out;
       animation-delay: 2s;
       animation-iteration-count: 2;
       transition: background 2s linear-gradient;
@@ -201,7 +210,7 @@ footer {
   input[type="checkbox"]:checked ~ .site-header .site-nav li{
     margin: 0 auto;
     padding: 15% 15% 15% 10%;
-  } 
+  }
   body {
       overflow-x: hidden;
   }
