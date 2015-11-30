@@ -1,38 +1,26 @@
 * {
   box-sizing: border-box;
+  border: 1px dashed blue;
 }
-
 body {
   /*background-color: #A182A4;*/
   font-family: 'Ubuntu', 'Arial', Sans-serif;
-  margin-left: auto;
-  margin-right: auto;
+  margin: 0 auto;
+  overflow-x: hidden;
   text-align: center;
-  /*background:
-   linear-gradient(
-    rgba(211, 211, 211, 0.5),
-    rgba(211, 211, 211, 0.5)
-  ),
-  url(../images/background-image.jpg);
-  background-position: top;
-  background-size: 100%;*/
 }
-
 a {
   text-decoration: none;
 }
-
 .about {
-  position: absolute;
+  position: relative;;
   top: 0;
   left: 0;
   margin: 5px;
 }
-
 .about a {
   color: #1C0E21;
 }
-
 .logo {
   font-family: 'Brush Script MT', 'Arial', sans-serif;
   font-size:100px;
@@ -41,9 +29,11 @@ a {
   padding:0;
   text-align: center;
 }
-
 .small-logo {
-  float: left;
+    position: absolute;
+  top: 0%;
+  right: 0%;
+  /*float: left;*/
   font-family: 'Brush Script MT', 'Arial', sans-serif;
   font-size:50px;
   font-weight:500;
@@ -51,9 +41,7 @@ a {
   margin: 0 0 0 0;
   padding: 15px;
   border-radius: 50%;
-  text-align: left;
 }
-
 .moto {
   font-family: 'Brush Script MT', 'Arial', sans-serif;
   font-size:40px;
@@ -62,12 +50,12 @@ a {
   padding:0;
   text-align: center;
 }
-
 .logo a {
   color: #1C0E21;
 }
-
 .login {
+    margin: 0 auto;
+  text-align: center;
   border-bottom: 5px solid #654F6F;
   width: 150px;
   display: inline-block;
@@ -75,18 +63,17 @@ a {
   padding: 10px;
   background-color: #1C0E21;
 }
-
 .login:hover {
   background-color: lightgrey;
   transition: all 0.3s linear;
   transform: scale(1.01);
 }
-
 .login a {
   color: #654F6F;
 }
-
 .register {
+  margin: 0 auto;
+  text-align: center;
   border-top: 5px solid;
   width: 150px;
   display: inline-block;
@@ -94,23 +81,19 @@ a {
   padding: 10px;
   background-color: #654F6F;
 }
-
 .register:hover {
   background-color: lightgrey;
   transition: all 0.3s linear;
   transform: scale(1.01);
 }
-
 .register a {
   color: #1C0E21;
 }
-
 footer {
   position: absolute;
   bottom: 0;
   right: 0;
 }
-
 /*Formatting for the nav bar*/
 .nav-trigger {
     position: absolute;
@@ -136,6 +119,8 @@ footer {
     color: #654F6F;
   }
   .site-wrap {
+      display: inline-block;
+      margin: 0 auto;
       min-width: 100%;
       min-height: 100%;
       position: relative;
@@ -147,10 +132,9 @@ footer {
   .navigation {
     padding: 0;
   }
-
   label[for="nav-trigger"] {
       position: fixed;
-      top: 15%;
+      top: 5%;
       left: 15px;
       z-index: 2;
       width: 50px;
@@ -168,7 +152,6 @@ footer {
       animation-iteration-count: 2;
       transition: background 2s linear-gradient;
 }
-
   /*animation for menu icon pulse effect*/
 @keyframes pulse {
   0% {
@@ -211,9 +194,6 @@ footer {
     margin: 0 auto;
     padding: 15% 15% 15% 10%;
   }
-  body {
-      overflow-x: hidden;
-  }
   .navigation li:hover {
     transition: 0.3s linear;
     background-color: lightgrey;
@@ -223,3 +203,65 @@ footer {
     color: #1C0E21;
   }
 /*Ending formatting for the NAV bar*/
+.blog-nav ul {
+    position: fixed;
+    list-style: none;
+    top: 100px;
+    padding: 0;
+    margin: 0;
+    font-size: 30px;
+}
+.blog-nav ul li {
+    padding: 10px 0;
+    text-align: left;
+}
+
+site-wrap {
+    position: absolute;
+    width: 800px;
+    margin: 0 auto;
+    padding: 0;
+    left: 0%;
+    right: 0%;
+    top: 100px;
+    text-align: left;
+}
+site-wrap h1 {
+    text-align: left;
+    clear: both;
+    margin: 5px 0;
+    padding: 5px;
+}
+site-wrap img {
+    float: left;
+    width: 200px;
+    padding: 0;
+    margin: 5px;
+}
+site-wrap h2 {
+    font-size: 20px;
+    display: inline-block;
+    border-left: 1px solid lightgrey;
+    padding: 5px;
+    margin: 0;
+    width: 290px;
+}
+site-wrap h2:last-child {
+    display: block;
+    clear: both;
+}
+
+site-wrap p {
+    text-align: center;
+}
+
+/*This is the clearfix*/
+.cf:before,
+.cf:after {
+    content: " ";
+    display: table;
+}
+
+.cf:after {
+    clear: both;
+}
