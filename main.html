@@ -6,11 +6,47 @@
 	<link type="text/css" rel="stylesheet" href="css/normalize.css" />
     <link href='https://fonts.googleapis.com/css?family=Ubuntu' rel='stylesheet' type='text/css'>
     <title>Floresco</title>
+    <script type="text/javascript" src="http://www.pureexample.com/js/lib/jquery-1.8.3.min.js"></script>
+    <script type="text/javascript" src="http://www.pureexample.com/js/flot/jquery.flot.min.js"></script>
+    <script type="text/javascript">
+    var data = [[1, 130], [2, 40], [3, 80], [4, 160], [5, 159], [6, 370], [7, 330], [8, 350], [9, 370], [10, 400], [11, 330], [12, 350]];
+
+    var dataset = [{label: "line1",data: data}];
+
+    var options = {
+        series: {
+            lines: { show: true },
+            points: {
+                radius: 1,
+                show: true
+            }
+        }
+    };
+
+    $(document).ready(function () {
+        $.plot($(".chart-placeholder"), dataset, options);
+    });
+    </script>
 </head>
 <body>
     <input type="checkbox" id="nav-trigger" class="nav-trigger" />
     <label for="nav-trigger"></label>
     <header class="site-header cf">
+        <ul class="market-summary">
+            <li class="market-charts">FTSE 100</li>
+            <div class="chart-placeholder"></div>
+            <li class="market-charts">UK 10Yr Bond</li>
+            <div class="chart-placeholder"></div>
+            <li class="market-charts">GBP:USD</li>
+            <div class="chart-placeholder"></div>
+            <li class="market-charts">Oil</li>
+            <div class="chart-placeholder"></div>
+            <li class="market-charts">Basic resources</li>
+            <div class="chart-placeholder"></div>
+            <li class="market-charts">Gold</li>
+            <div class="chart-placeholder"></div>
+        </ul>
+
         <h1 class="small-logo cf">Floresco</h1>
         <nav class="site-nav">
             <ul class="navigation">
@@ -23,22 +59,25 @@
         </nav>
         <nav class="blog-nav">
             <ul>
-                <li a href="#">Your profile</li>
-                <li a href="#">Your views</li>
+                <li><a href="#">Your profile</a></li>
+                <li><a href="#">Your blog</a></li>
+                <li><a href="#">Portfolio analytics</a>
                     <!-- the below should be a sub-list -->
-                    <li a href="#">Equities</li>
-                    <li a href="#">Bonds</li>
-                    <li a href="#">Funds</li>
-                    <li a href="#">Economics</li>
-                <li a href="#">Portfolio structure</li>
-                <li a href="#">Trading</li>
-                <li a href="#">Personal views</li>
+                    <ul>
+                        <li><a href="#">Equities</a></li>
+                        <li><a href="#">Bonds</a></li>
+                        <li><a href="#">Funds</a></li>
+                        <li><a href="#">Economics</a></li>
+                        <li><a href="#">Trading</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Following</a></li>
                 <li></li>
             </ul>
         </nav>
     </header>
     <site-wrap>
-        <h1>Your profile</h1>
+        <h1><a href="#">Your profile</a></h1>
             <img src="images/profile-photo.jpg" alt="profile-photo">
             <h2>Name: Sam Younger</h2>
             <h2>Username: testinguser</h2>
@@ -46,17 +85,21 @@
             <h2>Country: United Kingdom</h2>
             <h2>An overview of your investment experience</h2>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magni adipisci dolores iusto cumque voluptatem animi ea cupiditate laboriosam eum. Ipsum, minus eum. Tenetur, molestiae earum esse nihil adipisci corrupti reprehenderit.</p>
-        <h1>Your views</h1>
+        <h1><a href="#">Personal investment views</a></h1>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex earum iste cumque, repellat nobis, pariatur maxime facilis deserunt assumenda iusto hic excepturi minus et in suscipit dolore voluptatibus id rem.</p>
-        <h1>Equities</h1>
+        <h1><a href="#">Portfolio analytics</a></h1>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos expedita sapiente ipsam error perspiciatis deserunt possimus. Eos dolor, laudantium recusandae. Error vero beatae inventore dolores pariatur enim dolore asperiores debitis.</p>
-        <h1>Bonds</h1>
+        <h1><a href="#">Equities</a></h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos expedita sapiente ipsam error perspiciatis deserunt possimus. Eos dolor, laudantium recusandae. Error vero beatae inventore dolores pariatur enim dolore asperiores debitis.</p>
+        <h1><a href="#">Bonds</a></h1>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur quae magnam ratione, labore, dicta, sint qui eos quasi doloribus autem, cumque rerum rem dolore quas enim iste soluta dolorum. Rerum!</p>
-        <h1>Funds</h1>
+        <h1><a href="#">Funds</a></h1>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus reprehenderit error ab? Quo et cum quisquam delectus rerum nemo neque in, quae. Dolorem velit, aspernatur dolorum quisquam! Odit, minus, vitae.</p>
-        <h1>Economics</h1>
+        <h1><a href="#">Economics</a></h1>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sit dolorem perspiciatis esse repudiandae quos voluptas quasi eaque error beatae veritatis totam soluta illo asperiores aliquid, assumenda quia nemo animi sapiente.</p>
-        <h1>Your personal views</h1>
+        <h1><a href="#">Trading platform</a></h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sit dolorem perspiciatis esse repudiandae quos voluptas quasi eaque error beatae veritatis totam soluta illo asperiores aliquid, assumenda quia nemo animi sapiente.</p>
+        <h1><a href="#">Investors you are following</a></h1>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi nisi cupiditate, tenetur soluta eos quam unde dolore officiis. Numquam deserunt, animi dolorum laudantium corrupti ad repellat deleniti debitis harum atque.</p>
     </site-wrap>
     <footer>Copyright &copy;2015 Sam Younger</footer>

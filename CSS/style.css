@@ -1,6 +1,6 @@
 * {
   box-sizing: border-box;
-  border: 1px dashed blue;
+  /*border: 1px dashed blue;*/
 }
 body {
   /*background-color: #A182A4;*/
@@ -11,6 +11,7 @@ body {
 }
 a {
   text-decoration: none;
+  color: black;
 }
 .about {
   position: relative;;
@@ -30,17 +31,17 @@ a {
   text-align: center;
 }
 .small-logo {
-    position: absolute;
+    position: fixed;
   top: 0%;
   right: 0%;
   /*float: left;*/
   font-family: 'Brush Script MT', 'Arial', sans-serif;
   font-size:50px;
   font-weight:500;
-  background-color: #654F6F;
+  /*background-color: #654F6F;*/
   margin: 0 0 0 0;
   padding: 15px;
-  border-radius: 50%;
+  /*border-radius: 50%;*/
 }
 .moto {
   font-family: 'Brush Script MT', 'Arial', sans-serif;
@@ -89,9 +90,26 @@ a {
 .register a {
   color: #1C0E21;
 }
+
+.market-summary li {
+    display: inline-block;
+    border-left: 1px solid lightgray;
+    padding: 20px;
+}
+.market-summary li:first-child {
+    border-left: none;
+}
+.chart-placeholder {
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+    height: 80px;
+    width: 100px;
+}
+
 footer {
   position: absolute;
-  bottom: 0;
+  bottom:0;
   right: 0;
 }
 /*Formatting for the nav bar*/
@@ -203,8 +221,13 @@ footer {
     color: #1C0E21;
   }
 /*Ending formatting for the NAV bar*/
-.blog-nav ul {
+.blog-nav {
     position: fixed;
+    top: 15%;
+}
+
+.blog-nav ul {
+    /*position: fixed;*/
     list-style: none;
     top: 100px;
     padding: 0;
@@ -214,6 +237,11 @@ footer {
 .blog-nav ul li {
     padding: 10px 0;
     text-align: left;
+}
+
+.blog-nav ul ul {
+    margin-left: 50px;
+    font-size: 25px;
 }
 
 site-wrap {
@@ -231,6 +259,7 @@ site-wrap h1 {
     clear: both;
     margin: 5px 0;
     padding: 5px;
+    border-top: 1px solid lightgray;
 }
 site-wrap img {
     float: left;
