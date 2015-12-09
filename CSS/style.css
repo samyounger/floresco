@@ -1,9 +1,10 @@
 * {
   box-sizing: border-box;
+  color: white;
   /*border: 1px dashed blue;*/
 }
 body {
-  /*background-color: #A182A4;*/
+  background-color: #23282D;
   font-family: 'Ubuntu', 'Arial', Sans-serif;
   margin: 0 auto;
   overflow-x: hidden;
@@ -11,7 +12,10 @@ body {
 }
 a {
   text-decoration: none;
-  color: black;
+  color: white;
+}
+site-wrap a {
+    color: black;
 }
 .about {
   position: relative;;
@@ -75,7 +79,7 @@ a {
 .register {
   margin: 0 auto;
   text-align: center;
-  border-top: 5px solid;
+  border-top: 5px solid #1C0E21;
   width: 150px;
   display: inline-block;
   font-size: 30px;
@@ -135,17 +139,6 @@ footer {
   }
   .site-nav a {
     color: #654F6F;
-  }
-  .site-wrap {
-      display: inline-block;
-      margin: 0 auto;
-      min-width: 100%;
-      min-height: 100%;
-      position: relative;
-      top: 0;
-      bottom: 100%;
-      left: 0;
-      z-index: 0;
   }
   .navigation {
     padding: 0;
@@ -245,14 +238,17 @@ footer {
 }
 
 site-wrap {
+    background-color: white;
     position: absolute;
     width: 800px;
     margin: 0 auto;
-    padding: 0;
+    padding: 10px;
     left: 0%;
     right: 0%;
     top: 100px;
     text-align: left;
+    border-left: 1px solid lightgrey;
+    border-right: 1px solid lightgrey;
 }
 site-wrap h1 {
     text-align: left;
@@ -260,6 +256,7 @@ site-wrap h1 {
     margin: 5px 0;
     padding: 5px;
     border-top: 1px solid lightgray;
+    color: black;
 }
 site-wrap img {
     float: left;
@@ -267,21 +264,38 @@ site-wrap img {
     padding: 0;
     margin: 5px;
 }
+.profilebox {
+  float: left;
+  width: 280px;
+}
 site-wrap h2 {
-    font-size: 20px;
-    display: inline-block;
+    font-size: 15px;
+    float: left;
     border-left: 1px solid lightgrey;
     padding: 5px;
-    margin: 0;
-    width: 290px;
+    margin:  0;
+    width: 100px;
+    color: black;
 }
 site-wrap h2:last-child {
-    display: block;
+    float: left;
     clear: both;
 }
-
 site-wrap p {
     text-align: center;
+    clear: both;
+    color: black;
+}
+input {
+    width: 150px;
+    height: 30px;
+    float: left;
+    color: black;
+}
+textarea {
+    width: 100%;
+    height: 300px;
+    color: black;
 }
 
 /*This is the clearfix*/

@@ -6,27 +6,7 @@
 	<link type="text/css" rel="stylesheet" href="css/normalize.css" />
     <link href='https://fonts.googleapis.com/css?family=Ubuntu' rel='stylesheet' type='text/css'>
     <title>Floresco</title>
-    <script type="text/javascript" src="http://www.pureexample.com/js/lib/jquery-1.8.3.min.js"></script>
-    <script type="text/javascript" src="http://www.pureexample.com/js/flot/jquery.flot.min.js"></script>
-    <script type="text/javascript">
-    var data = [[1, 130], [2, 40], [3, 80], [4, 160], [5, 159], [6, 370], [7, 330], [8, 350], [9, 370], [10, 400], [11, 330], [12, 350]];
 
-    var dataset = [{label: "line1",data: data}];
-
-    var options = {
-        series: {
-            lines: { show: true },
-            points: {
-                radius: 1,
-                show: true
-            }
-        }
-    };
-
-    $(document).ready(function () {
-        $.plot($(".chart-placeholder"), dataset, options);
-    });
-    </script>
 </head>
 <body>
     <input type="checkbox" id="nav-trigger" class="nav-trigger" />
@@ -40,8 +20,6 @@
             <li class="market-charts">GBP:USD</li>
             <div class="chart-placeholder"></div>
             <li class="market-charts">Oil</li>
-            <div class="chart-placeholder"></div>
-            <li class="market-charts">Basic resources</li>
             <div class="chart-placeholder"></div>
             <li class="market-charts">Gold</li>
             <div class="chart-placeholder"></div>
@@ -79,14 +57,62 @@
     <site-wrap>
         <h1><a href="#">Your profile</a></h1>
             <img src="images/profile-photo.jpg" alt="profile-photo">
-            <h2>Name: Sam Younger</h2>
-            <h2>Username: testinguser</h2>
-            <h2>Investment style: growth</h2>
-            <h2>Country: United Kingdom</h2>
-            <h2>An overview of your investment experience</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magni adipisci dolores iusto cumque voluptatem animi ea cupiditate laboriosam eum. Ipsum, minus eum. Tenetur, molestiae earum esse nihil adipisci corrupti reprehenderit.</p>
-        <h1><a href="#">Personal investment views</a></h1>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex earum iste cumque, repellat nobis, pariatur maxime facilis deserunt assumenda iusto hic excepturi minus et in suscipit dolore voluptatibus id rem.</p>
+            <div class="profilebox">
+                <h2>Name:</h2>
+                <input type="text" id="name" placeholder="User Name"></input>
+                <h2>Username:</h2>
+                <input type="text" id="username" placeholder="Name"></input>
+                <h2>Investment style:</h2>
+                <select name="Strategy" id="strategy">
+                    <optgroup label="Low-risk">
+                    <option value="maximum-caution">Maximum caution</option>
+                    <option value="capital-preservation">Capital preservation</option>
+                    <optgroup label="Medium-risk">
+                    <option value="cautious">Cautious</option>
+                    <option value="balanced">Balanced</option>
+                    <optgroup label="Growth">
+                    <option value="balanced-growth">Balanced / Growth</option>
+                    <option value="growth">Growth</option>
+                    <option value="maximum-growth">Maximum growth</option>
+                    </optgroup>
+                </select>
+            </div>
+            <div class="profilebox">
+                <h2>Country:</h2>
+                <select name="country" id="country">
+                    <optgroup label="Europe">
+                        <option value="united-kingdom">United Kingdom</option>
+                        <option value="france">France</option>
+                        <option value="germany">Germany</option>
+                        <option value="spain">Spain</option>
+                        <option value="italy">Italy</option>
+                    <optgroup label="North America">
+                        <option value="usa">USA</option>
+                        <option value="canada">Canada</option>
+                        <option value="mexico">Mexico</option>
+                    <optgroup label="Latin-America">
+                        <option value="brazil">Brazil</option>
+                        <option value="bolivia">Bolivia</option>
+                        <option value="argentina">Argentina</option>
+                    <optgroup label="Asia">
+                        <option value="china">China</option>
+                        <option value="india">India</option>
+                        <option value="indonesia">Indonesia</option>
+                        <option value="australia">Australia</option>
+                </select>
+            </div>
+            <h2>Investment experience</h2>
+                <select name="experience" id="experience">
+                    <option value="none">None</option>
+                    <option value="limited">Limited</option>
+                    <option value="basic">Basic Understanding</option>
+                    <option value="in-progress">Some experience</option>
+                    <option value="experienced">Experienced</option>
+                </select>
+            <h1>Investment Experience</h1>
+            <textarea id="past-experience" placeholder="Describe your past investment experience"></textarea>
+            <h1><a href="#">Personal investment views</a></h1>
+            <textarea id="investment-views" placeholder="What are your latest investment views. These can include your thoughts on; stocks, bonds, Funds, to macro-economic events, or geopolitical events"></textarea>
         <h1><a href="#">Portfolio analytics</a></h1>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos expedita sapiente ipsam error perspiciatis deserunt possimus. Eos dolor, laudantium recusandae. Error vero beatae inventore dolores pariatur enim dolore asperiores debitis.</p>
         <h1><a href="#">Equities</a></h1>
@@ -102,6 +128,11 @@
         <h1><a href="#">Investors you are following</a></h1>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi nisi cupiditate, tenetur soluta eos quam unde dolore officiis. Numquam deserunt, animi dolorum laudantium corrupti ad repellat deleniti debitis harum atque.</p>
     </site-wrap>
-    <footer>Copyright &copy;2015 Sam Younger</footer>
+    <!-- <footer>Copyright &copy;2015 Sam Younger</footer> -->
+
+ <script type="text/javascript" src="http://www.pureexample.com/js/lib/jquery-1.8.3.min.js"></script>
+ <script type="text/javascript" src="http://www.pureexample.com/js/flot/jquery.flot.min.js"></script>
+ <script type="text/javascript" src="javascript/main.js"></script>
+
 </body>
 </html>
