@@ -267,11 +267,16 @@ site-wrap img {
 .profilebox {
   float: left;
   width: 280px;
+  border-left: 1px solid lightgrey;
+  border-right: 1px solid lightgrey;
+}
+.profilebox:nth-child(2) {
+    border-left: none;
+    border-right: none;
 }
 site-wrap h2 {
     font-size: 15px;
     float: left;
-    border-left: 1px solid lightgrey;
     padding: 5px;
     margin:  0;
     width: 100px;
@@ -297,6 +302,22 @@ textarea {
     height: 300px;
     color: black;
 }
+input[type="submit"] {
+    float: right;
+    background-color: #654F6F;
+    padding: 5px;
+    height: 50%;
+    width: 100px;
+    margin: 20px 5px 0 0;
+    border-radius: 10px;
+    border: none;
+}
+#save-blog {
+    margin: 5px;
+    float: right;
+
+}
+
 
 /*This is the clearfix*/
 .cf:before,
