@@ -315,9 +315,20 @@ input[type="submit"] {
 #save-blog {
     margin: 5px;
     float: right;
-
 }
-
+.highchart {
+    border: 1px solid lightgrey;
+}
+.highchart td, th {
+    color: black;
+    text-align: center;
+    width: 150px;
+    height: 50px;
+    border: 1px solid lightgrey;
+}
+.highchart thead {
+    background: linear-gradient(180deg, white, darkgray);
+}
 
 /*This is the clearfix*/
 .cf:before,

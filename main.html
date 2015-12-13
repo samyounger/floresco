@@ -3,10 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <link type="text/css" rel="stylesheet" href="css/style.css">
-	<link type="text/css" rel="stylesheet" href="css/normalize.css" />
+	<link type="text/css" rel="stylesheet" href="css/normalize.css">
+    <!-- <link rel="stylesheet" href="bootstrap-3.3.6-dist/css/bootstrap.min.css"> -->
     <link href='https://fonts.googleapis.com/css?family=Ubuntu' rel='stylesheet' type='text/css'>
     <title>Floresco</title>
-
 </head>
 <body>
     <input type="checkbox" id="nav-trigger" class="nav-trigger" />
@@ -117,7 +117,47 @@
             <textarea id="investment-views" placeholder="What are your latest investment views. These can include your thoughts on; stocks, bonds, Funds, to macro-economic events, or geopolitical events"></textarea>
             <input type="submit" id="save-blog" value="Save" />
         <h1><a href="#">Portfolio analytics</a></h1>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos expedita sapiente ipsam error perspiciatis deserunt possimus. Eos dolor, laudantium recusandae. Error vero beatae inventore dolores pariatur enim dolore asperiores debitis.</p>
+            <table class="highchart" data-graph-container="#graphcontainer" data-graph-type="pie">
+                <thead>
+                    <tr>
+                        <th>Portfolio Name</th>
+                        <th>Portfolio Value</th>
+                        <th data-graph-skip="1">Yield (GBP)</th>
+                        <th data-graph-skip="1">Yield (%)</th>
+                        <th data-graph-skip="1">Profit (GBP)</th>
+                        <th data-graph-skip="1">Profit (%)</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Main account</td>
+                        <td>1000000</td>
+                        <td>50000</td>
+                        <td>5.0</td>
+                        <td>99999</td>
+                        <td>10.0</td>
+                    </tr>
+                    <tr>
+                        <td>ISA account</td>
+                        <td>500000</td>
+                        <td>25,000</td>
+                        <td>2.9</td>
+                        <td>10111</td>
+                        <td>12.0</td>
+                    </tr>
+                    <tr>
+                        <td>SIPP account</td>
+                        <td>120000</td>
+                        <td>12000</td>
+                        <td>2.0</td>
+                        <td>15320</td>
+                        <td>14.0</td>
+                    </tr>
+                </tbody>
+            </table>
+            <div>
+                <div id=graphcontainer></div>
+            </div>
         <h1><a href="#">Equities</a></h1>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos expedita sapiente ipsam error perspiciatis deserunt possimus. Eos dolor, laudantium recusandae. Error vero beatae inventore dolores pariatur enim dolore asperiores debitis.</p>
         <h1><a href="#">Bonds</a></h1>
@@ -133,9 +173,17 @@
     </site-wrap>
     <!-- <footer>Copyright &copy;2015 Sam Younger</footer> -->
 
- <script type="text/javascript" src="http://www.pureexample.com/js/lib/jquery-1.8.3.min.js"></script>
- <script type="text/javascript" src="http://www.pureexample.com/js/flot/jquery.flot.min.js"></script>
- <script type="text/javascript" src="javascript/main.js"></script>
+     <script type="text/javascript" src="http://www.pureexample.com/js/lib/jquery-1.8.3.min.js"></script>
+     <script type="text/javascript" src="http://www.pureexample.com/js/flot/jquery.flot.min.js"></script>
+     <script type="text/javascript" src="javascript/main.js"></script>
+
+    <!-- this is teh jquery library link -->
+     <script type="text/javascript" src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+
+     <!-- the script below is for chart formatting -->
+    <script type="text/javascript" src="https://code.highcharts.com/highcharts.js"></script>
+    <script type="text/javascript" src="javascript/jquery-highchartTable-plugin-master/jquery.highchartTable.js"></script>
+    <!-- ***************************************** -->
 
 </body>
 </html>
