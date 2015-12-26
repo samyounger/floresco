@@ -12,11 +12,128 @@
         }
     };
 
-    $(document).ready(function () {
-        $.plot($(".chart-placeholder"), dataset, options);
+$(document).ready(function () {
+    $.plot($(".chart-placeholder"), dataset, options);
+    $('table.highchart').highchartTable();
+
+    //when i click on the profile element
+    $('.primary-nav .nav-profile').on('click',function(event){
+        event.preventDefault();
+        //if I click profile, it changes display on all other elements to 'none', and reveals just the profile div
+        if($('site-wrap .profile').hasClass('view')){
+            //remove the view class from others
+            $('site-wrap .blog').removeClass('view');
+            $('site-wrap .portfolio').removeClass('view');
+            $('site-wrap .economics').removeClass('view');
+            $('site-wrap .trading').removeClass('view');
+            $('site-wrap .following').removeClass('view');
+            //make just the profile element visible
+        } else {
+            $('site-wrap .profile').addClass('view')
+            $('site-wrap .blog').removeClass('view');
+            $('site-wrap .portfolio').removeClass('view');
+            $('site-wrap .economics').removeClass('view');
+            $('site-wrap .trading').removeClass('view');
+            $('site-wrap .following').removeClass('view');
+        }
     });
 
+    $('.primary-nav .nav-blog').on('click',function(event){
+            event.preventDefault();
+        if($('site-wrap .blog').hasClass('view')){
+            //remove the view class from others
+            $('site-wrap .profile').removeClass('view');
+            $('site-wrap .portfolio').removeClass('view');
+            $('site-wrap .economics').removeClass('view');
+            $('site-wrap .trading').removeClass('view');
+            $('site-wrap .following').removeClass('view');
+            //make just the profile element visible
+        } else {
+            $('site-wrap .blog').addClass('view')
+            $('site-wrap .portfolio').removeClass('view');
+            $('site-wrap .portfolio').removeClass('view');
+            $('site-wrap .economics').removeClass('view');
+            $('site-wrap .trading').removeClass('view');
+            $('site-wrap .following').removeClass('view');
+        }
+    });
 
-    $(document).ready(function() {
-  $('table.highchart').highchartTable();
+    $('.primary-nav .nav-portfolio').on('click',function(event){
+            event.preventDefault();
+        if($('site-wrap .portfolio').hasClass('view')){
+            //remove the view class from others
+            $('site-wrap .profile').removeClass('view');
+            $('site-wrap .blog').removeClass('view');
+            $('site-wrap .economics').removeClass('view');
+            $('site-wrap .trading').removeClass('view');
+            $('site-wrap .following').removeClass('view');
+            //make just the profile element visible
+        } else {
+            $('site-wrap .portfolio').addClass('view')
+            $('site-wrap .portfolio').removeClass('view');
+            $('site-wrap .blog').removeClass('view');
+            $('site-wrap .economics').removeClass('view');
+            $('site-wrap .trading').removeClass('view');
+            $('site-wrap .following').removeClass('view');
+        }
+    });
+
+    $('.primary-nav .nav-economics').on('click',function(event){
+            event.preventDefault();
+        if($('site-wrap .economics').hasClass('view')){
+            //remove the view class from others
+            $('site-wrap .profile').removeClass('view');
+            $('site-wrap .blog').removeClass('view');
+            $('site-wrap .portfolio').removeClass('view');
+            $('site-wrap .trading').removeClass('view');
+            $('site-wrap .following').removeClass('view');
+            //make just the profile element visible
+        } else {
+            $('site-wrap .economics').addClass('view')
+            $('site-wrap .portfolio').removeClass('view');
+            $('site-wrap .blog').removeClass('view');
+            $('site-wrap .portfolio').removeClass('view');
+            $('site-wrap .trading').removeClass('view');
+            $('site-wrap .following').removeClass('view');
+        }
+    });
+
+    $('.primary-nav .nav-trading').on('click',function(event){
+            event.preventDefault();
+        if($('site-wrap .trading').hasClass('view')){
+            //remove the view class from others
+            $('site-wrap .profile').removeClass('view');
+            $('site-wrap .blog').removeClass('view');
+            $('site-wrap .portfolio').removeClass('view');
+            $('site-wrap .economics').removeClass('view');
+            $('site-wrap .following').removeClass('view');
+            //make just the profile element visible
+        } else {
+            $('site-wrap .trading').addClass('view')
+            $('site-wrap .portfolio').removeClass('view');
+            $('site-wrap .blog').removeClass('view');
+            $('site-wrap .portfolio').removeClass('view');
+            $('site-wrap .economics').removeClass('view');
+            $('site-wrap .following').removeClass('view');
+        }
+    });
+    $('.primary-nav .nav-following').on('click',function(event){
+            event.preventDefault();
+        if($('site-wrap .following').hasClass('view')){
+            //remove the view class from others
+            $('site-wrap .profile').removeClass('view');
+            $('site-wrap .blog').removeClass('view');
+            $('site-wrap .portfolio').removeClass('view');
+            $('site-wrap .economics').removeClass('view');
+            $('site-wrap .trading').removeClass('view');
+            //make just the profile element visible
+        } else {
+            $('site-wrap .following').addClass('view')
+            $('site-wrap .portfolio').removeClass('view');
+            $('site-wrap .blog').removeClass('view');
+            $('site-wrap .portfolio').removeClass('view');
+            $('site-wrap .economics').removeClass('view');
+            $('site-wrap .trading').removeClass('view');
+        }
+    });
 });

@@ -14,6 +14,13 @@ a {
   text-decoration: none;
   color: white;
 }
+.profile, .blog, .portfolio, .economics, .trading, .following {
+    display:none;
+}
+.view {
+    display: block;
+}
+
 site-wrap a {
     color: black;
 }
@@ -214,12 +221,12 @@ footer {
     color: #1C0E21;
   }
 /*Ending formatting for the NAV bar*/
-.blog-nav {
+.main-nav {
     position: fixed;
     top: 15%;
 }
 
-.blog-nav ul {
+.main-nav ul {
     /*position: fixed;*/
     list-style: none;
     top: 100px;
@@ -227,12 +234,12 @@ footer {
     margin: 0;
     font-size: 30px;
 }
-.blog-nav ul li {
+.main-nav ul li {
     padding: 10px 0;
     text-align: left;
 }
 
-.blog-nav ul ul {
+.main-nav ul ul {
     margin-left: 50px;
     font-size: 25px;
 }

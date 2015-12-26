@@ -35,11 +35,11 @@
                 <li><a href="#">Blog</a></li>
             </ul>
         </nav>
-        <nav class="blog-nav">
-            <ul>
-                <li><a href="#">Your profile</a></li>
-                <li><a href="#">Your blog</a></li>
-                <li><a href="#">Portfolio analytics</a>
+        <nav class="main-nav">
+            <ul class="primary-nav">
+                <li class="nav-profile"><a href="#">Your profile</a></li>
+                <li class="nav-blog"><a href="#">Your blog</a></li>
+                <li class="nav-portfolio"><a href="#">Portfolio analytics</a>
                     <!-- the below should be a sub-list -->
                     <ul>
                         <li><a href="#">Equities</a></li>
@@ -49,13 +49,14 @@
                         <li><a href="#">Trading</a></li>
                     </ul>
                 </li>
-                <li><a href="#">Following</a></li>
+                <li class="nav-following"><a href="#">Following</a></li>
                 <li></li>
             </ul>
         </nav>
     </header>
     <site-wrap>
-        <h1><a href="#">Your profile</a></h1>
+        <div class="profile">
+            <h1><a href="#">Your profile</a></h1>
             <img src="images/profile-photo.jpg" alt="profile-photo">
             <div class="profilebox">
                 <h2>Name:</h2>
@@ -101,75 +102,87 @@
                         <option value="australia">Australia</option>
                 </select>
                 <h2>Investment experience</h2>
-                    <select name="experience" id="experience">
-                        <option value="none">None</option>
-                        <option value="limited">Limited</option>
-                        <option value="basic">Basic Understanding</option>
-                        <option value="in-progress">Some experience</option>
-                        <option value="experienced">Experienced</option>
-                    </select>
-                    <input type="submit" id="save" value="Save" />
+                <select name="experience" id="experience">
+                    <option value="none">None</option>
+                    <option value="limited">Limited</option>
+                    <option value="basic">Basic Understanding</option>
+                    <option value="in-progress">Some experience</option>
+                    <option value="experienced">Experienced</option>
+                </select>
+                <input type="submit" id="save" value="Save" />
             </div>
             <h1>Investment Experience</h1>
             <textarea id="past-experience" placeholder="Describe your past investment experience"></textarea>
             <input type="submit" id="save-blog" value="Save" />
+        </div>
+        <div class="blog">
             <h1><a href="#">Personal investment views</a></h1>
             <textarea id="investment-views" placeholder="What are your latest investment views. These can include your thoughts on; stocks, bonds, Funds, to macro-economic events, or geopolitical events"></textarea>
             <input type="submit" id="save-blog" value="Save" />
-        <h1><a href="#">Portfolio analytics</a></h1>
-            <table class="highchart" data-graph-container="#graphcontainer" data-graph-type="pie">
-                <thead>
-                    <tr>
-                        <th>Portfolio Name</th>
-                        <th>Portfolio Value</th>
-                        <th data-graph-skip="1">Yield (GBP)</th>
-                        <th data-graph-skip="1">Yield (%)</th>
-                        <th data-graph-skip="1">Profit (GBP)</th>
-                        <th data-graph-skip="1">Profit (%)</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>Main account</td>
-                        <td>1000000</td>
-                        <td>50000</td>
-                        <td>5.0</td>
-                        <td>99999</td>
-                        <td>10.0</td>
-                    </tr>
-                    <tr>
-                        <td>ISA account</td>
-                        <td>500000</td>
-                        <td>25,000</td>
-                        <td>2.9</td>
-                        <td>10111</td>
-                        <td>12.0</td>
-                    </tr>
-                    <tr>
-                        <td>SIPP account</td>
-                        <td>120000</td>
-                        <td>12000</td>
-                        <td>2.0</td>
-                        <td>15320</td>
-                        <td>14.0</td>
-                    </tr>
-                </tbody>
-            </table>
-            <div>
-                <div id=graphcontainer></div>
-            </div>
-        <h1><a href="#">Equities</a></h1>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos expedita sapiente ipsam error perspiciatis deserunt possimus. Eos dolor, laudantium recusandae. Error vero beatae inventore dolores pariatur enim dolore asperiores debitis.</p>
-        <h1><a href="#">Bonds</a></h1>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur quae magnam ratione, labore, dicta, sint qui eos quasi doloribus autem, cumque rerum rem dolore quas enim iste soluta dolorum. Rerum!</p>
-        <h1><a href="#">Funds</a></h1>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus reprehenderit error ab? Quo et cum quisquam delectus rerum nemo neque in, quae. Dolorem velit, aspernatur dolorum quisquam! Odit, minus, vitae.</p>
-        <h1><a href="#">Economics</a></h1>
+        </div>
+        <div class="portfolio">
+            <h1><a href="#">Portfolio analytics</a></h1>
+                <table class="highchart" data-graph-container="#graphcontainer" data-graph-type="pie">
+                    <caption>Value allocated by portfolio</caption>
+                    <thead>
+                        <tr>
+                            <th>Portfolio Name</th>
+                            <th>Portfolio Value</th>
+                            <th data-graph-skip="1">Yield (GBP)</th>
+                            <th data-graph-skip="1">Yield (%)</th>
+                            <th data-graph-skip="1">Profit (GBP)</th>
+                            <th data-graph-skip="1">Profit (%)</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Main account</td>
+                            <td>1000000</td>
+                            <td>50000</td>
+                            <td>5.0</td>
+                            <td>99999</td>
+                            <td>10.0</td>
+                        </tr>
+                        <tr>
+                            <td>ISA account</td>
+                            <td>500000</td>
+                            <td>25,000</td>
+                            <td>2.9</td>
+                            <td>10111</td>
+                            <td>12.0</td>
+                        </tr>
+                        <tr>
+                            <td>SIPP account</td>
+                            <td>120000</td>
+                            <td>12000</td>
+                            <td>2.0</td>
+                            <td>15320</td>
+                            <td>14.0</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <div>
+                    <div id=graphcontainer></div>
+                </div>
+            <h1><a href="#">Equities</a></h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos expedita sapiente ipsam error perspiciatis deserunt possimus. Eos dolor, laudantium recusandae. Error vero beatae inventore dolores pariatur enim dolore asperiores debitis.</p>
+            <h1><a href="#">Bonds</a></h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur quae magnam ratione, labore, dicta, sint qui eos quasi doloribus autem, cumque rerum rem dolore quas enim iste soluta dolorum. Rerum!</p>
+            <h1><a href="#">Funds</a></h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus reprehenderit error ab? Quo et cum quisquam delectus rerum nemo neque in, quae. Dolorem velit, aspernatur dolorum quisquam! Odit, minus, vitae.</p>
+        </div>
+        <div class="economics">
+            <h1><a href="#">Economics</a></h1>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sit dolorem perspiciatis esse repudiandae quos voluptas quasi eaque error beatae veritatis totam soluta illo asperiores aliquid, assumenda quia nemo animi sapiente.</p>
-        <h1><a href="#">Trading platform</a></h1>
+        </div>
+        <div class="trading">
+            <h1><a href="#">Trading platform</a></h1>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sit dolorem perspiciatis esse repudiandae quos voluptas quasi eaque error beatae veritatis totam soluta illo asperiores aliquid, assumenda quia nemo animi sapiente.</p>
-        <h1><a href="#">Investors you are following</a></h1>
+        </div>
+        <div class="following">
+            <h1><a href="#">Investors you are following</a></h1>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi nisi cupiditate, tenetur soluta eos quam unde dolore officiis. Numquam deserunt, animi dolorum laudantium corrupti ad repellat deleniti debitis harum atque.</p>
+        </div>
     </site-wrap>
     <!-- <footer>Copyright &copy;2015 Sam Younger</footer> -->
 
