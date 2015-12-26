@@ -14,13 +14,39 @@ a {
   text-decoration: none;
   color: white;
 }
+
+/*********************************************************/
 .profile, .blog, .portfolio, .economics, .trading, .following {
-    display:none;
+    display: none;
+    transform: scale(0);
+    opacity: 0;
+    transition: transform .3s ease-in-out, opacity .3s ease-in-out;
 }
 .view {
-    display: block;
+        display: block;
+        transform: scale(1);
+        opacity: 1;
+        animation: anim .3s ease-in-out;
 }
 
+@keyframes anim {
+  0% {
+    display: none;
+    opacity: 0;
+  }
+  1% {
+    display: block;
+    transform: scale(0);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+.view a {
+    color: black;
+}
+/*********************************************************/
 site-wrap a {
     color: black;
 }
@@ -248,8 +274,8 @@ site-wrap {
     background-color: white;
     position: absolute;
     width: 800px;
-    margin: 0 auto;
-    padding: 10px;
+    margin: 50px auto;
+    padding: 0px;
     left: 0%;
     right: 0%;
     top: 100px;
@@ -294,7 +320,7 @@ site-wrap h2:last-child {
     clear: both;
 }
 site-wrap p {
-    text-align: center;
+    text-align: left;
     clear: both;
     color: black;
 }
