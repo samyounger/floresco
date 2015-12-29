@@ -1,0 +1,458 @@
+* {
+  box-sizing: border-box;
+  color: white;
+  /*border: 1px dashed blue;*/
+}
+body {
+  background-color: #23282D;
+  font-family: 'Ubuntu', 'Arial', Sans-serif;
+  margin: 0 auto;
+  overflow-x: hidden;
+  text-align: center;
+}
+a {
+  text-decoration: none;
+  color: white;
+}
+
+/*********************************************************/
+.profile, .blog, .portfolio, .economics, .trading, .following {
+    display: none;
+    transform: scale(0);
+    opacity: 0;
+    transition: transform .3s ease-in-out, opacity .3s ease-in-out;
+}
+.view {
+        display: block;
+        transform: scale(1);
+        opacity: 1;
+        animation: anim .3s ease-in-out;
+}
+
+@keyframes anim {
+  0% {
+    display: none;
+    opacity: 0;
+  }
+  1% {
+    display: block;
+    transform: scale(0);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+.view a {
+    color: black;
+}
+/*********************************************************/
+site-wrap a {
+    color: black;
+}
+.about {
+  position: relative;;
+  top: 0;
+  left: 0;
+  margin: 5px;
+}
+.about a {
+  color: #1C0E21;
+}
+.logo {
+  font-family: 'Brush Script MT', 'Arial', sans-serif;
+  font-size:100px;
+  font-weight:500;
+  margin: 15% 0px 0px;
+  padding:0;
+  text-align: center;
+}
+.small-logo {
+    position: fixed;
+  top: 0%;
+  right: 0%;
+  /*float: left;*/
+  font-family: 'Brush Script MT', 'Arial', sans-serif;
+  font-size:50px;
+  font-weight:500;
+  /*background-color: #654F6F;*/
+  margin: 0 0 0 0;
+  padding: 15px;
+  /*border-radius: 50%;*/
+}
+.moto {
+  font-family: 'Brush Script MT', 'Arial', sans-serif;
+  font-size:40px;
+  font-weight:normal;
+  margin: 0% 0px 0px;
+  padding:0;
+  text-align: center;
+}
+.logo a {
+  color: #1C0E21;
+}
+.login {
+    margin: 0 auto;
+  text-align: center;
+  border-bottom: 5px solid #654F6F;
+  width: 150px;
+  display: inline-block;
+  font-size: 30px;
+  padding: 10px;
+  background-color: #1C0E21;
+}
+.login:hover {
+  background-color: lightgrey;
+  transition: all 0.3s linear;
+  transform: scale(1.01);
+}
+.login a {
+  color: #654F6F;
+}
+.register {
+  margin: 0 auto;
+  text-align: center;
+  border-top: 5px solid #1C0E21;
+  width: 150px;
+  display: inline-block;
+  font-size: 30px;
+  padding: 10px;
+  background-color: #654F6F;
+}
+.register:hover {
+  background-color: lightgrey;
+  transition: all 0.3s linear;
+  transform: scale(1.01);
+}
+.register a {
+  color: #1C0E21;
+}
+
+.market-summary li {
+    display: inline-block;
+    border-left: 1px solid lightgray;
+    padding: 20px;
+}
+.market-summary li:first-child {
+    border-left: none;
+}
+.chart-placeholder {
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+    height: 80px;
+    width: 100px;
+}
+
+footer {
+  position: absolute;
+  bottom:0;
+  right: 0;
+}
+/*Formatting for the nav bar*/
+.nav-trigger {
+    position: absolute;
+    clip: rect(0, 0, 0, 0);
+}
+  .site-nav li {
+    display: block;
+    float: none;
+    text-align: left;
+  }
+  .site-nav {
+      background: #1C0E21;
+      width: 20%;
+      height: 100%;
+      position: fixed;
+      top: -100%;
+      right: 0;
+      bottom: 0;
+      left: -100%;
+      z-index: 1;
+  }
+  .site-nav a {
+    color: #654F6F;
+  }
+  .navigation {
+    padding: 0;
+  }
+  label[for="nav-trigger"] {
+      position: fixed;
+      top: 5%;
+      left: 15px;
+      z-index: 2;
+      width: 50px;
+      height: 50px;
+      cursor: pointer;
+      display: inline-block;
+      float: right;
+      background:linear-gradient(to bottom, #1C0E21 0%, #1C0E21 20%, transparent 20%, transparent 40%, #1C0E21 40%, #1C0E21 60%, transparent 60%,transparent 80%, #1C0E21 80%, #1C0E21 100%);
+      background-size: contain;
+
+      animation-name: pulse;
+      animation-duration: 1.5s;
+      animation-timing-function: ease-in-out;
+      animation-delay: 2s;
+      animation-iteration-count: 2;
+      transition: background 2s linear-gradient;
+}
+  /*animation for menu icon pulse effect*/
+@keyframes pulse {
+  0% {
+    transform: scale (1.0);
+  }
+  50% {
+    transform: scale(1.2);
+    background:linear-gradient(to bottom, #654F6F 0%, #654F6F 20%, transparent 20%, transparent 40%, #654F6F 40%, #654F6F 60%, transparent 60%,transparent 80%, #654F6F 80%, #654F6F 100%);
+  }
+  100% {
+    transform: scale(1.0);
+  }
+}
+  /*end of animation menu pulse effect*/
+
+  .nav-trigger:checked + label {
+      left: 21%;
+  }
+  .nav-trigger:checked ~ .site-wrap {
+      left: 0%;
+  }
+  .nav-trigger + label, .site-wrap {
+      transition: left 0.3s ease-in-out;
+  }
+  .nav-trigger + label, .site-nav {
+      transition: left 0.5s ease-in-out;
+  }
+  input[type="checkbox"]:checked ~ .site-header h1 {
+    color: black;
+  }
+  input[type="checkbox"]:checked ~ .site-header .site-nav {
+    top: 0;
+    left: 0;
+  }
+  input[type="checkbox"]:checked ~ .site-header .site-nav a{
+    font-size: 1.0em;
+    font-weight: normal;
+  }
+  input[type="checkbox"]:checked ~ .site-header .site-nav li{
+    margin: 0 auto;
+    padding: 15% 15% 15% 10%;
+  }
+  .navigation li:hover {
+    transition: 0.3s linear;
+    background-color: lightgrey;
+    color: #1C0E21;
+  }
+  .navigation a:hover {
+    color: #1C0E21;
+  }
+/*Ending formatting for the NAV bar*/
+.main-nav {
+    position: fixed;
+    top: 15%;
+}
+
+.main-nav ul {
+    /*position: fixed;*/
+    list-style: none;
+    top: 100px;
+    padding: 0;
+    margin: 0;
+    font-size: 30px;
+}
+.main-nav ul li {
+    padding: 10px 0;
+    text-align: left;
+}
+
+.main-nav ul ul {
+    margin-left: 50px;
+    font-size: 25px;
+}
+
+site-wrap {
+    background-color: white;
+    position: absolute;
+    width: 800px;
+    margin: 50px auto;
+    padding: 0px;
+    left: 0%;
+    right: 0%;
+    top: 100px;
+    text-align: left;
+    border-left: 1px solid lightgrey;
+    border-right: 1px solid lightgrey;
+}
+site-wrap h1 {
+    text-align: left;
+    clear: both;
+    margin: 5px 0;
+    padding: 5px;
+    border-top: 1px solid lightgray;
+    color: black;
+}
+site-wrap img {
+    float: left;
+    width: 200px;
+    padding: 0;
+    margin: 5px;
+}
+.profilebox {
+  float: left;
+  width: 280px;
+  border-left: 1px solid lightgrey;
+  border-right: 1px solid lightgrey;
+}
+.profilebox:nth-child(2) {
+    border-left: none;
+    border-right: none;
+}
+site-wrap h2 {
+    font-size: 15px;
+    float: left;
+    padding: 5px;
+    margin:  0;
+    width: 100px;
+    color: black;
+}
+site-wrap h2:last-child {
+    float: left;
+    clear: both;
+}
+site-wrap p {
+    text-align: left;
+    clear: both;
+    color: black;
+}
+input {
+    width: 150px;
+    height: 30px;
+    float: left;
+    color: black;
+}
+textarea {
+    width: 100%;
+    height: 300px;
+    color: black;
+}
+input[type="submit"] {
+    float: right;
+    background-color: #654F6F;
+    padding: 5px;
+    height: 50%;
+    width: 100px;
+    margin: 20px 5px 0 0;
+    border-radius: 10px;
+    border: none;
+}
+#save-blog {
+    margin: 5px;
+    float: right;
+}
+.portfolio {
+    border: 1px solid lightgrey;
+}
+.portfolio td, th {
+    color: black;
+    text-align: center;
+    width: 150px;
+    height: 50px;
+    border: 1px solid lightgrey;
+}
+.portfolio thead {
+    background: linear-gradient(180deg, white, darkgray);
+}
+
+.pie-chart {
+    float: left;
+    width: 350px;
+}
+/*#asset-pie {
+    max-width: 350px;
+}
+#currency-pie {
+    max-width: 350px;
+}*/
+
+
+.asset-allocation {
+    border: 1px solid lightgrey;
+}
+.asset-allocation td, th {
+    color: black;
+    text-align: center;
+    width: 150px;
+    height: 50px;
+    border: 1px solid lightgrey;
+}
+.asset-allocation thead {
+    background: linear-gradient(180deg, white, #6179C0);
+}
+
+.currency-allocation {
+    border: 1px solid lightgrey;
+}
+.currency-allocation td, th {
+    color: black;
+    text-align: center;
+    width: 150px;
+    height: 50px;
+    border: 1px solid lightgrey;
+}
+.currency-allocation thead {
+    background: linear-gradient(180deg, white, #839073);
+}
+
+.equities {
+    border: 1px solid lightgrey;
+}
+.equities td, th {
+    color: black;
+    text-align: center;
+    width: 150px;
+    height: 50px;
+    border: 1px solid lightgrey;
+}
+.equities thead {
+    background: linear-gradient(180deg, white, darkgray);
+}
+
+
+.bonds {
+    border: 1px solid lightgrey;
+}
+.bonds td, th {
+    color: black;
+    text-align: center;
+    width: 150px;
+    height: 50px;
+    border: 1px solid lightgrey;
+}
+.bonds thead {
+    background: linear-gradient(180deg, white, darkgray);
+}
+
+.funds {
+    border: 1px solid lightgrey;
+}
+.funds td, th {
+    color: black;
+    text-align: center;
+    width: 150px;
+    height: 50px;
+    border: 1px solid lightgrey;
+}
+.funds thead {
+    background: linear-gradient(180deg, white, darkgray);
+}
+
+/*This is the clearfix*/
+.cf:before,
+.cf:after {
+    content: " ";
+    display: table;
+}
+
+.cf:after {
+    clear: both;
+}

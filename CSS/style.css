@@ -9,6 +9,7 @@ body {
   margin: 0 auto;
   overflow-x: hidden;
   text-align: center;
+  /*position: relative;*/
 }
 a {
   text-decoration: none;
@@ -45,6 +46,28 @@ a {
 }
 .view a {
     color: black;
+}
+
+.slide-bar {
+    transform: rotate(90deg);
+    float: right;
+    width: 400px;
+    height: 0;
+    margin: 200px 0 0 0;
+    position: absolute;
+    right: 0%;
+}
+.range-title {
+    position: absolute;
+    right: 8%;
+    margin: 180px 0 0 0;
+}
+#range {
+    position: absolute;
+    right: 10%;
+    float: right;
+    margin: 200px 0 0 0;
+    text-align: right;
 }
 /*********************************************************/
 site-wrap a {
@@ -349,17 +372,100 @@ input[type="submit"] {
     margin: 5px;
     float: right;
 }
-.highchart {
+.portfolio {
     border: 1px solid lightgrey;
 }
-.highchart td, th {
+.portfolio td, th {
     color: black;
     text-align: center;
     width: 150px;
     height: 50px;
     border: 1px solid lightgrey;
 }
-.highchart thead {
+.portfolio thead {
+    background: linear-gradient(180deg, white, darkgray);
+}
+
+.pie-chart {
+    float: left;
+    width: 350px;
+}
+/*#asset-pie {
+    max-width: 350px;
+}
+#currency-pie {
+    max-width: 350px;
+}*/
+
+
+.asset-allocation {
+    border: 1px solid lightgrey;
+}
+.asset-allocation td, th {
+    color: black;
+    text-align: center;
+    width: 150px;
+    height: 50px;
+    border: 1px solid lightgrey;
+}
+.asset-allocation thead {
+    background: linear-gradient(180deg, white, #6179C0);
+}
+
+.currency-allocation {
+    border: 1px solid lightgrey;
+}
+.currency-allocation td, th {
+    color: black;
+    text-align: center;
+    width: 150px;
+    height: 50px;
+    border: 1px solid lightgrey;
+}
+.currency-allocation thead {
+    background: linear-gradient(180deg, white, #839073);
+}
+
+.equities {
+    border: 1px solid lightgrey;
+}
+.equities td, th {
+    color: black;
+    text-align: center;
+    width: 150px;
+    height: 50px;
+    border: 1px solid lightgrey;
+}
+.equities thead {
+    background: linear-gradient(180deg, white, darkgray);
+}
+
+
+.bonds {
+    border: 1px solid lightgrey;
+}
+.bonds td, th {
+    color: black;
+    text-align: center;
+    width: 150px;
+    height: 50px;
+    border: 1px solid lightgrey;
+}
+.bonds thead {
+    background: linear-gradient(180deg, white, darkgray);
+}
+
+.funds {
+    border: 1px solid lightgrey;
+}
+.funds td, th {
+    color: black;
+    text-align: center;
+    width: 150px;
+    height: 50px;
+    border: 1px solid lightgrey;
+}
+.funds thead {
     background: linear-gradient(180deg, white, darkgray);
 }
 
