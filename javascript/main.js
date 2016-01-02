@@ -24,6 +24,13 @@ $(document).ready(function() {
             $('site-wrap .economics').removeClass('view');
             $('site-wrap .trading').removeClass('view');
             $('site-wrap .following').removeClass('view');
+
+            $('.primary-nav .nav-blog').removeClass('selected');
+            $('.primary-nav .nav-portfolio').removeClass('selected');
+            $('.primary-nav .nav-economics').removeClass('selected');
+            $('.primary-nav .nav-trading').removeClass('selected');
+            $('.primary-nav .nav-following').removeClass('selected');
+
             //make just the profile element visible
         } else {
             $('site-wrap .profile').addClass('view')
@@ -32,6 +39,15 @@ $(document).ready(function() {
             $('site-wrap .economics').removeClass('view');
             $('site-wrap .trading').removeClass('view');
             $('site-wrap .following').removeClass('view');
+
+            $('.primary-nav .nav-profile').addClass('selected');
+            $('.primary-nav .nav-blog').removeClass('selected');
+            $('.primary-nav .nav-portfolio').removeClass('selected');
+            $('.primary-nav .nav-economics').removeClass('selected');
+            $('.primary-nav .nav-trading').removeClass('selected');
+            $('.primary-nav .nav-following').removeClass('selected');
+
+            $('.vanishing-title').addClass('vanish')
         }
     });
 
@@ -44,6 +60,12 @@ $(document).ready(function() {
             $('site-wrap .economics').removeClass('view');
             $('site-wrap .trading').removeClass('view');
             $('site-wrap .following').removeClass('view');
+
+            $('.primary-nav .nav-profile').removeClass('selected');
+            $('.primary-nav .nav-portfolio').removeClass('selected');
+            $('.primary-nav .nav-economics').removeClass('selected');
+            $('.primary-nav .nav-trading').removeClass('selected');
+            $('.primary-nav .nav-following').removeClass('selected');
             //make just the profile element visible
         } else {
             $('site-wrap .blog').addClass('view')
@@ -52,6 +74,15 @@ $(document).ready(function() {
             $('site-wrap .economics').removeClass('view');
             $('site-wrap .trading').removeClass('view');
             $('site-wrap .following').removeClass('view');
+
+            $('.primary-nav .nav-blog').addClass('selected');
+            $('.primary-nav .nav-profile').removeClass('selected');
+            $('.primary-nav .nav-portfolio').removeClass('selected');
+            $('.primary-nav .nav-economics').removeClass('selected');
+            $('.primary-nav .nav-trading').removeClass('selected');
+            $('.primary-nav .nav-following').removeClass('selected');
+
+            $('.vanishing-title').addClass('vanish')
         }
     });
 
@@ -64,6 +95,12 @@ $(document).ready(function() {
             $('site-wrap .economics').removeClass('view');
             $('site-wrap .trading').removeClass('view');
             $('site-wrap .following').removeClass('view');
+
+            $('.primary-nav .nav-profile').removeClass('selected');
+            $('.primary-nav .nav-blog').removeClass('selected');
+            $('.primary-nav .nav-economics').removeClass('selected');
+            $('.primary-nav .nav-trading').removeClass('selected');
+            $('.primary-nav .nav-following').removeClass('selected');
             //make just the profile element visible
         } else {
             $('site-wrap .portfolio').addClass('view')
@@ -72,6 +109,15 @@ $(document).ready(function() {
             $('site-wrap .economics').removeClass('view');
             $('site-wrap .trading').removeClass('view');
             $('site-wrap .following').removeClass('view');
+
+            $('.primary-nav .nav-portfolio').addClass('selected');
+            $('.primary-nav .nav-profile').removeClass('selected');
+            $('.primary-nav .nav-blog').removeClass('selected');
+            $('.primary-nav .nav-economics').removeClass('selected');
+            $('.primary-nav .nav-trading').removeClass('selected');
+            $('.primary-nav .nav-following').removeClass('selected');
+
+            $('.vanishing-title').addClass('vanish')
         }
     });
 
@@ -84,6 +130,12 @@ $(document).ready(function() {
             $('site-wrap .portfolio').removeClass('view');
             $('site-wrap .trading').removeClass('view');
             $('site-wrap .following').removeClass('view');
+
+            $('.primary-nav .nav-profile').removeClass('selected');
+            $('.primary-nav .nav-blog').removeClass('selected');
+            $('.primary-nav .nav-portfolio').removeClass('selected');
+            $('.primary-nav .nav-trading').removeClass('selected');
+            $('.primary-nav .nav-following').removeClass('selected');
             //make just the profile element visible
         } else {
             $('site-wrap .economics').addClass('view')
@@ -92,6 +144,15 @@ $(document).ready(function() {
             $('site-wrap .portfolio').removeClass('view');
             $('site-wrap .trading').removeClass('view');
             $('site-wrap .following').removeClass('view');
+
+            $('.primary-nav .nav-economics').addClass('selected');
+            $('.primary-nav .nav-profile').removeClass('selected');
+            $('.primary-nav .nav-blog').removeClass('selected');
+            $('.primary-nav .nav-portfolio').removeClass('selected');
+            $('.primary-nav .nav-trading').removeClass('selected');
+            $('.primary-nav .nav-following').removeClass('selected');
+
+            $('.vanishing-title').addClass('vanish')
         }
     });
 
@@ -104,6 +165,12 @@ $(document).ready(function() {
             $('site-wrap .portfolio').removeClass('view');
             $('site-wrap .economics').removeClass('view');
             $('site-wrap .following').removeClass('view');
+
+            $('.primary-nav .nav-profile').removeClass('selected');
+            $('.primary-nav .nav-blog').removeClass('selected');
+            $('.primary-nav .nav-portfolio').removeClass('selected');
+            $('.primary-nav .nav-economics').removeClass('selected');
+            $('.primary-nav .nav-following').removeClass('selected');
             //make just the profile element visible
         } else {
             $('site-wrap .trading').addClass('view')
@@ -112,6 +179,15 @@ $(document).ready(function() {
             $('site-wrap .portfolio').removeClass('view');
             $('site-wrap .economics').removeClass('view');
             $('site-wrap .following').removeClass('view');
+
+            $('.primary-nav .nav-trading').addClass('selected');
+            $('.primary-nav .nav-profile').removeClass('selected');
+            $('.primary-nav .nav-blog').removeClass('selected');
+            $('.primary-nav .nav-portfolio').removeClass('selected');
+            $('.primary-nav .nav-economics').removeClass('selected');
+            $('.primary-nav .nav-following').removeClass('selected');
+
+            $('.vanishing-title').addClass('vanish')
         }
     });
     $('.primary-nav .nav-following').on('click', function(event) {
@@ -123,6 +199,12 @@ $(document).ready(function() {
             $('site-wrap .portfolio').removeClass('view');
             $('site-wrap .economics').removeClass('view');
             $('site-wrap .trading').removeClass('view');
+
+            $('.primary-nav .nav-profile').removeClass('selected');
+            $('.primary-nav .nav-blog').removeClass('selected');
+            $('.primary-nav .nav-portfolio').removeClass('selected');
+            $('.primary-nav .nav-economics').removeClass('selected');
+            $('.primary-nav .nav-trading').removeClass('selected');
             //make just the profile element visible
         } else {
             $('site-wrap .following').addClass('view')
@@ -131,6 +213,15 @@ $(document).ready(function() {
             $('site-wrap .portfolio').removeClass('view');
             $('site-wrap .economics').removeClass('view');
             $('site-wrap .trading').removeClass('view');
+
+            $('.primary-nav .nav-following').addClass('selected');
+            $('.primary-nav .nav-profile').removeClass('selected');
+            $('.primary-nav .nav-blog').removeClass('selected');
+            $('.primary-nav .nav-portfolio').removeClass('selected');
+            $('.primary-nav .nav-economics').removeClass('selected');
+            $('.primary-nav .nav-trading').removeClass('selected');
+
+            $('.vanishing-title').addClass('vanish')
         }
     });
 });

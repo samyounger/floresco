@@ -16,12 +16,43 @@ a {
   color: white;
 }
 
+.vanishing-title {
+    position: absolute;
+    top: 30%;
+    left: 30%;
+    font-family: 'Brush Script MT', 'Arial', sans-serif;
+    font-size:30px;
+    border: 3px solid #6A6A6A;
+    border-style: inset;
+    padding: 0 60px 0 60px;
+}
+
+.vanishing-title h1, .vanishing-title h2, .vanishing-title h3 {
+    color: #6A6A6A;
+    font-weight: 100;
+}
+
+.vanish {
+    display: none;
+}
+
 /*********************************************************/
 .profile, .blog, .portfolio, .economics, .trading, .following {
     display: none;
     transform: scale(0);
     opacity: 0;
     transition: transform .3s ease-in-out, opacity .3s ease-in-out;
+}
+
+.nav-profile:hover, .nav-blog:hover, .nav-portfolio:hover, .nav-economics:hover, .nav-trading:hover, .nav-following:hover {
+    background-color: #6A6A6A;
+    border-radius: 10px;
+}
+.nav-equities:hover, .nav-bonds:hover, .nav-funds:hover {
+    background-color: #6A6A6A;
+}
+.primary-nav a:hover {
+    color: white;
 }
 .view {
         display: block;
@@ -48,27 +79,81 @@ a {
     color: black;
 }
 
+.selected, .selected a, .selected ul li {
+    background-color: white;
+    color: #23282D;
+    border-radius: 10px;
+    margin-left: 10px;
+    animation: anim-nav .3s linear;
+}
+.selected:hover, .selected a:hover, .selected li:hover {
+    background-color: white;
+    border-radius: 10px;
+    color: black;
+}
+@keyframes anim-nav {
+    0% {
+        margin-left: 0px;
+        background-color: #23282D;
+        color: white;
+        border-radius: 0;
+    }
+    100% {
+        margin-left: 10px;
+        background-color: white;
+        color: #23282D;
+        border-radius: 10px;
+    }
+}
+/*************************************************************/
+/*design of the slide-bar*/
 .slide-bar {
+    -webkit-appearance: none;
     transform: rotate(90deg);
     float: right;
-    width: 400px;
+    width: 500px;
     height: 0;
-    margin: 200px 0 0 0;
+    margin: 265px 0 0 0;
     position: absolute;
-    right: 0%;
+    right: -5%;
 }
 .range-title {
     position: absolute;
-    right: 8%;
+    right: 6%;
     margin: 180px 0 0 0;
 }
 #range {
     position: absolute;
-    right: 10%;
+    right: 8%;
     float: right;
     margin: 200px 0 0 0;
     text-align: right;
 }
+
+input[type=range]::-webkit-slider-runnable-track {
+    /*width: 300px;*/
+    height: 5px;
+    background: #ddd;
+    border: none;
+    border-radius: 3px;
+}
+input[type=range]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    border: none;
+    height: 25px;
+    width: 25px;
+    border-radius: 50%;
+    background: goldenrod;
+    margin-top: -10px;
+}
+input[type=range]:focus {
+    outline: none;
+}
+input[type=range]:focus::-webkit-slider-runnable-track {
+    background: #ccc;
+    width: 50px;
+}
+
 /*********************************************************/
 site-wrap a {
     color: black;
@@ -276,7 +361,6 @@ footer {
 }
 
 .main-nav ul {
-    /*position: fixed;*/
     list-style: none;
     top: 100px;
     padding: 0;
@@ -291,6 +375,11 @@ footer {
 .main-nav ul ul {
     margin-left: 50px;
     font-size: 25px;
+}
+.main-nav ul ul li {
+    border-style: none;
+    padding: 10px 0;
+    margin: 0;
 }
 
 site-wrap {
