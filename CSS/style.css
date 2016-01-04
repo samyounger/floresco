@@ -415,9 +415,8 @@ site-wrap img {
   border-left: 1px solid lightgrey;
   border-right: 1px solid lightgrey;
 }
-.profilebox:nth-child(2) {
-    border-left: none;
-    border-right: none;
+.profile .profilebox:last-child {
+    border: none;
 }
 site-wrap h2 {
     font-size: 15px;
@@ -475,17 +474,24 @@ input[type="submit"] {
     background: linear-gradient(180deg, white, darkgray);
 }
 
-.pie-chart {
-    float: left;
-    width: 350px;
+.performance {
+    display: none;
 }
-/*#asset-pie {
-    max-width: 350px;
+
+.pie-chart {
+    position: absolute;
+    width: 100%;
+}
+#asset-pie {
+    position: relative;
+    float: left;
+    width: 50%;
 }
 #currency-pie {
-    max-width: 350px;
-}*/
-
+    position: relative;
+    float: left;
+    width: 50%;
+}
 
 .asset-allocation {
     border: 1px solid lightgrey;

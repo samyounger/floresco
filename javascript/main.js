@@ -1,3 +1,20 @@
+
+$(document).ready(function() {
+//this scrolls into view the equities section of the portfolio view
+    var equities = document.getElementById("equities-section");
+    var bonds = document.getElementById("bonds-section");
+    var funds = document.getElementById("funds-section");
+        $('.nav-portfolio .nav-equities').on('click', function(event) {
+                equities.scrollIntoView({behavior: "smooth" });
+        });
+        $('.nav-portfolio .nav-bonds').on('click', function(event) {
+                bonds.scrollIntoView({behavior: "smooth" });
+        });
+        $('.nav-portfolio .nav-funds').on('click', function(event) {
+                funds.scrollIntoView({behavior: "smooth" });
+        });
+});
+
 function showValue(newValue) {
         document.getElementById("range").innerHTML=newValue;
     };
@@ -5,6 +22,7 @@ function showValue(newValue) {
 $(document).ready(function() {
 
     //for the two pie charts asset & currency allocations
+    $('table.performance').highchartTable();
     $('table.asset-allocation').highchartTable();
     $('table.currency-allocation').highchartTable();
 
