@@ -471,7 +471,7 @@ input[type="submit"] {
 .graph-container {
     width: 800px;
 }
-#performance-chart, #gdp-column {
+#performance-chart, #gdp-column, #trade-chart {
     width: 790px;
 }
 #asset-pie, #currency-pie {
@@ -520,7 +520,7 @@ input[type="submit"] {
     background: linear-gradient(180deg, white, darkgray);
 }
 
-.uk-gdp {
+.uk-gdp, .trade {
     display: none;
 }
 

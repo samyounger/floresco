@@ -22,6 +22,7 @@ function showValue(newValue) {
 $(document).ready(function() {
 
     //for the two pie charts asset & currency allocations
+    $('table.trade').highchartTable();
     $('table.performance').highchartTable();
     $('table.asset-allocation').highchartTable();
     $('table.currency-allocation').highchartTable();
