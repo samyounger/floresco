@@ -30,7 +30,6 @@ a {
     color: #6A6A6A;
     font-weight: 100;
 }
-
 .vanish {
     display: none;
 }
@@ -229,17 +228,28 @@ site-wrap a {
 .market-summary li {
     display: inline-block;
     border-left: 1px solid lightgray;
-    padding: 20px;
+    padding: 0;
+    margin: 0;
 }
 .market-summary li:first-child {
     border-left: none;
 }
-.chart-placeholder {
+.chart-placeholder1, .chart-placeholder2, .chart-placeholder3, .chart-placeholder4, .chart-placeholder5 {
+    height: 80px;
+    width: 140px;
+    padding: 0;
+    margin: 0;
+}
+ .bar-graph-container {
     display: inline-block;
     margin: 0;
-    padding: 0;
+    padding: 0 5px 0 5px;
     height: 80px;
-    width: 100px;
+    width: 150px;
+}
+.market-charts {
+    text-align: center;
+    padding: 0 0 50px 0;
 }
 
 footer {

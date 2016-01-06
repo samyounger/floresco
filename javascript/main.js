@@ -29,7 +29,11 @@ $(document).ready(function() {
     $('table.uk-gdp').highchartTable();
 
     //small-charts at the top of the page
-    $.plot($(".chart-placeholder"), dataset, options);
+    $.plot($(".chart-placeholder1"), dataset, options);
+    $.plot($(".chart-placeholder2"), dataset, options);
+    $.plot($(".chart-placeholder3"), dataset, options);
+    $.plot($(".chart-placeholder4"), dataset, options);
+    $.plot($(".chart-placeholder5"), dataset, options);
 
 // *******************************************************
 //this filters which section to view by clicking
@@ -246,7 +250,6 @@ $(document).ready(function() {
     });
 });
 
-//data for the two pie-charts
 var data = [
     [1, 130],
     [2, 40],
