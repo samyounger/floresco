@@ -9,7 +9,6 @@ body {
   margin: 0 auto;
   overflow-x: hidden;
   text-align: center;
-  /*position: relative;*/
 }
 a {
   text-decoration: none;
@@ -157,15 +156,6 @@ input[type=range]:focus::-webkit-slider-runnable-track {
 /*********************************************************/
 site-wrap a {
     color: black;
-}
-.about {
-  position: relative;;
-  top: 0;
-  left: 0;
-  margin: 5px;
-}
-.about a {
-  color: #1C0E21;
 }
 .logo {
   font-family: 'Brush Script MT', 'Arial', sans-serif;
@@ -478,21 +468,16 @@ input[type="submit"] {
     display: none;
 }
 
-.pie-chart {
-    position: absolute;
-    width: 100%;
+.graph-container {
+    width: 800px;
 }
-#asset-pie {
-    position: relative;
+#performance-chart {
+    width: 790px;
+}
+#asset-pie, #currency-pie {
     float: left;
-    width: 50%;
+    width: 390px;
 }
-#currency-pie {
-    position: relative;
-    float: left;
-    width: 50%;
-}
-
 .asset-allocation {
     border: 1px solid lightgrey;
 }
