@@ -25,7 +25,8 @@ $(document).ready(function() {
     $('table.performance').highchartTable();
     $('table.asset-allocation').highchartTable();
     $('table.currency-allocation').highchartTable();
-    
+    $('table.uk-gdp').highchartTable();
+
     //small-charts at the top of the page
     $.plot($(".chart-placeholder"), dataset, options);
 
