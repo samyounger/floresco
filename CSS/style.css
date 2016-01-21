@@ -104,7 +104,7 @@ a {
     }
 }
 /*************************************************************/
-/*design of the slide-bar*/
+/*design of the bull/bear slide-bar*/
 .slide-bar {
     -webkit-appearance: none;
     transform: rotate(90deg);
@@ -344,7 +344,7 @@ footer {
   }
   input[type="checkbox"]:checked ~ .site-header .site-nav li{
     margin: 0 auto;
-    padding: 15% 15% 15% 10%;
+    padding: 10% 15% 10% 10%;
   }
   .navigation li:hover {
     transition: 0.3s linear;
@@ -561,6 +561,12 @@ input[type="submit"] {
 }
 .funds thead {
     background: linear-gradient(180deg, white, darkgray);
+}
+
+.fee-example tbody tr td, .fee-example {
+    color: black;
+    margin: 0 auto;
+    border: 1px solid lightgrey;
 }
 
 /*This is the clearfix*/
