@@ -1,18 +1,16 @@
 * {
   box-sizing: border-box;
-  color: white;
   /*border: 1px dashed blue;*/
 }
 body {
   background-color: #23282D;
-  font-family: 'Ubuntu', 'Arial', Sans-serif;
+  font-family: 'Avenir', 'Arial', Sans-serif;
   margin: 0 auto;
   overflow-x: hidden;
   text-align: center;
 }
 a {
   text-decoration: none;
-  color: white;
 }
 
 .vanishing-title {
@@ -48,6 +46,9 @@ a {
 }
 .nav-equities:hover, .nav-bonds:hover, .nav-funds:hover {
     background-color: #6A6A6A;
+}
+.primary-nav a {
+    color: white;
 }
 .primary-nav a:hover {
     color: white;
@@ -116,11 +117,13 @@ a {
     right: -5%;
 }
 .range-title {
+    color: white;
     position: absolute;
     right: 6%;
     margin: 180px 0 0 0;
 }
 #range {
+    color: white;
     position: absolute;
     right: 8%;
     float: right;
@@ -166,18 +169,19 @@ site-wrap a {
 }
 .small-logo {
     position: fixed;
-  top: 0%;
-  right: 0%;
-  /*float: left;*/
-  font-family: 'Pinyon Script', 'Arial', sans-serif;
-  font-size:50px;
-  font-weight:500;
-  /*background-color: #654F6F;*/
-  margin: 0 0 0 0;
-  padding: 15px;
-  /*border-radius: 50%;*/
+    top: 0%;
+    right: 0%;
+    font-family: 'Pinyon Script', 'Arial', sans-serif;
+    font-size:50px;
+    font-weight:500;
+    margin: 0 0 0 0;
+    padding: 15px;
+}
+.small-logo a {
+    color: white;
 }
 .moto {
+    color: white;
   font-family: 'Pinyon Script', 'Arial', sans-serif;
   font-size:40px;
   font-weight:normal;
@@ -240,12 +244,15 @@ site-wrap a {
     padding: 0;
     margin: 0;
 }
- .bar-graph-container {
+ .bar-graph-container{
     display: inline-block;
     margin: 0;
     padding: 0 5px 0 5px;
     height: 80px;
     width: 150px;
+}
+.bar-graph-container li {
+    color: white;
 }
 .market-charts {
     text-align: center;
@@ -339,7 +346,7 @@ footer {
     left: 0;
   }
   input[type="checkbox"]:checked ~ .site-header .site-nav a{
-    font-size: 1.0em;
+    font-size: 30px;
     font-weight: normal;
   }
   input[type="checkbox"]:checked ~ .site-header .site-nav li{
@@ -418,22 +425,22 @@ site-wrap img {
 .profile .profilebox:last-child {
     border: none;
 }
-site-wrap h2 {
+site-wrap .profile .profilebox p {
     font-size: 15px;
     float: left;
     padding: 5px;
     margin:  0;
     width: 100px;
     color: black;
-}
-site-wrap h2:last-child {
-    float: left;
-    clear: both;
-}
-site-wrap p {
+
+    font-family: 'avenir', sans-serif;
     text-align: left;
     clear: both;
     color: black;
+}
+site-wrap .profile .profilebox p:last-child {
+    float: left;
+    clear: both;
 }
 input {
     width: 150px;
