@@ -576,6 +576,39 @@ input[type="submit"] {
     border: 1px solid lightgrey;
 }
 
+/*******************************************************/
+/*Contact form style*/
+
+.contact, .input-container label {
+    background-color: #23282D;
+    border: none;
+    color: white;
+    font-size: 20px;
+}
+.contact input {
+    float: none;
+    display: block;
+    width: 500px;
+    height: 40px;
+    border: 3px solid #6A6A6A;
+    border-style: inset;
+}
+.input-container {
+    width: 500px;
+    margin: 0 auto;
+}
+.input-container textarea {
+    border: 3px solid #6A6A6A;
+    border-style: inset;
+}
+.input-container input[type="submit"] {
+    margin: 20px 0 20px;
+    background-color: #654F6F;
+    border: none;
+}
+
+/*******************************************************/
+
 /*This is the clearfix*/
 .cf:before,
 .cf:after {

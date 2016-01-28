@@ -42,7 +42,7 @@
     <h1 class="small-logo cf"><a href="index.html">Floresco</a></h1>
     <nav class="site-nav">
         <ul class="navigation">
-            <li><a href="#">About Floresco</a></li>
+            <li><a href="about.html">About Floresco</a></li>
             <li><a href="#">Our Features</a></li>
             <li><a href="#">The Investment Platform</a></li>
             <li><a href="#">Market Research</a></li>
@@ -51,8 +51,32 @@
         </ul>
     </nav>
 </header>
-<site-wrap>
+<site-wrap class="contact">
+    <form action="http://formspree.io/sam.younger@floresco.io" method="post">
+        <div class="input-container">
+            <label for="full-name">Full Name</label>
+            <input type="text" id="full-name" name="name" placeholder="e.g. Joe Horatio Bloggs">
+        </div>
 
+        <div class="input-container">
+            <label for="email">Email Address</label>
+            <input type="email" id="email" name="_replyto" placeholder="e.g. joe.horatio.bloggs@floresco.io">
+        </div>
+
+        <div class="input-container">
+            <label for="telephone">Telephone Number</label>
+            <input type="number" id="telephone" placeholder="e.g. 020 7XXX XX9">
+        </div>
+
+        <div class="input-container">
+            <label for="message">Message</label>
+            <textarea name="message" id="message" placeholder="It would be great to hear you. We will get back to you soon" cols="30" rows="30"></textarea>
+        </div>
+
+        <div class="input-container">
+            <input type="submit" value="Send">
+        </div>
+    </form>
 </site-wrap>
 
 <!-- ***************************************** -->
