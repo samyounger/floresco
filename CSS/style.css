@@ -33,14 +33,14 @@ a {
 }
 
 /*********************************************************/
-.profile, .blog, .portfolio, .economics, .trading, .following {
+.profile, .florescocommunity, .portfolio, .economics, .trading, .following {
     display: none;
     transform: scale(0);
     opacity: 0;
     transition: transform .3s ease-in-out, opacity .3s ease-in-out;
 }
 
-.nav-profile:hover, .nav-blog:hover, .nav-portfolio:hover, .nav-economics:hover, .nav-trading:hover, .nav-following:hover {
+.nav-profile:hover, .nav-florescocommunity:hover, .nav-portfolio:hover, .nav-economics:hover, .nav-trading:hover, .nav-following:hover {
     background-color: #6A6A6A;
     border-radius: 10px;
 }
@@ -107,7 +107,6 @@ a {
 /*************************************************************/
 /*design of the bull/bear slide-bar*/
 .slide-bar {
-    -webkit-appearance: none;
     transform: rotate(90deg);
     float: right;
     width: 500px;
@@ -289,7 +288,8 @@ footer {
     color: #654F6F;
   }
   .navigation {
-    padding: 0;
+    top: 15%;
+    padding: 20px 0;
   }
   label[for="nav-trigger"] {
       position: fixed;
@@ -346,7 +346,7 @@ footer {
     left: 0;
   }
   input[type="checkbox"]:checked ~ .site-header .site-nav a{
-    font-size: 30px;
+    font-size: 25px;
     font-weight: normal;
   }
   input[type="checkbox"]:checked ~ .site-header .site-nav li{
@@ -364,7 +364,7 @@ footer {
 /*Ending formatting for the NAV bar*/
 .main-nav {
     position: fixed;
-    top: 15%;
+    top: 15%
 }
 
 .main-nav ul {
@@ -450,7 +450,7 @@ input {
 }
 textarea {
     width: 100%;
-    height: 300px;
+    height: 250px;
     color: black;
 }
 input[type="submit"] {
