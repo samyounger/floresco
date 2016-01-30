@@ -6,6 +6,7 @@ body {
   background-color: #23282D;
   font-family: 'Avenir', 'Arial', Sans-serif;
   margin: 0 auto;
+  /*width: 800px;*/
   overflow-x: hidden;
   text-align: center;
 }
@@ -107,6 +108,7 @@ a {
 /*************************************************************/
 /*design of the bull/bear slide-bar*/
 .slide-bar {
+    -webkit-appearance: none;
     transform: rotate(90deg);
     float: right;
     width: 500px;
@@ -155,9 +157,6 @@ input[type=range]:focus::-webkit-slider-runnable-track {
 }
 
 /*********************************************************/
-site-wrap a {
-    color: black;
-}
 .logo {
   font-family: 'Pinyon Script', 'Arial', sans-serif;
   font-size:100px;
@@ -393,12 +392,13 @@ site-wrap {
     background-color: white;
     position: absolute;
     width: 800px;
-    margin: 50px auto;
+    left: 25%;
+    margin: 0 auto;
     padding: 0px;
-    left: 0%;
-    right: 0%;
-    top: 100px;
-    text-align: left;
+    /*left: 0%;
+    right: 0%;*/
+    /*top: 100px;*/
+    /*text-align: left;*/
     border-left: 1px solid lightgrey;
     border-right: 1px solid lightgrey;
 }
@@ -408,7 +408,6 @@ site-wrap h1 {
     margin: 5px 0;
     padding: 5px;
     border-top: 1px solid lightgray;
-    color: black;
 }
 site-wrap img {
     float: left;
@@ -416,29 +415,24 @@ site-wrap img {
     padding: 0;
     margin: 5px;
 }
-.profilebox {
-  float: left;
-  width: 280px;
-  border-left: 1px solid lightgrey;
-  border-right: 1px solid lightgrey;
+.profilebox1, .profilebox2 {
+    float: left;
+    background-color: lightgrey;
+    width: 50%;
+    border-left: 1px solid lightgrey;
+    border-right: 1px solid lightgrey;
 }
-.profile .profilebox:last-child {
-    border: none;
+.profilebox2 {
+    border-left: none;
 }
-site-wrap .profile .profilebox p {
+.profilebox1 p, .profilebox2 p {
     font-size: 15px;
     float: left;
     padding: 5px;
     margin:  0;
     width: 100px;
-    color: black;
-
-    font-family: 'avenir', sans-serif;
-    text-align: left;
-    clear: both;
-    color: black;
 }
-site-wrap .profile .profilebox p:last-child {
+.profilebox2 p:last-child {
     float: left;
     clear: both;
 }
@@ -479,6 +473,10 @@ input[type="submit"] {
 }
 .portfolio thead {
     background: linear-gradient(180deg, white, darkgray);
+}
+.nav-portfolio ul a, .nav-portfolio ul li {
+    font-size: 20px;
+    height: 30px;
 }
 
 .performance {
