@@ -607,6 +607,10 @@ input[type="submit"] {
     border: none;
 }
 
+footer {
+    color: white;
+}
+
 /*******************************************************/
 
 /*This is the clearfix*/
