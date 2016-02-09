@@ -72,59 +72,74 @@
         <div class="profile">
             <h1><a href="#">Your profile</a></h1>
             <img src="images/profile-photo.jpg" alt="profile-photo">
-            <div class="profilebox1">
-                <p>Name:</p>
-                <input type="text" id="name" placeholder="User Name"></input>
-                <p>Username:</p>
-                <input type="text" id="username" placeholder="Name"></input>
-                <p>Investment style:</p>
-                <select name="Strategy" id="strategy">
-                    <optgroup label="Low-risk">
-                        <option value="maximum-caution">Maximum caution</option>
-                        <option value="capital-preservation">Capital preservation</option>
-                        <optgroup label="Medium-risk">
-                            <option value="cautious">Cautious</option>
-                            <option value="balanced">Balanced</option>
-                            <optgroup label="Growth">
-                                <option value="balanced-growth">Balanced / Growth</option>
-                                <option value="growth">Growth</option>
-                                <option value="maximum-growth">Maximum growth</option>
+            <div class="profilebox">
+                <div class="profilecontent">
+                    <p>Name:</p>
+                    <input type="text" id="name" placeholder="User Name"></input>
+                </div>
+                <div class="profilecontent">
+                    <p>Username:</p>
+                    <input type="text" id="username" placeholder="Name"></input>
+                </div>
+                <div class="profilecontent">
+                    <p>Investment style:</p>
+                    <select name="Strategy" id="strategy">
+                        <optgroup label="Low-risk">
+                            <option value="maximum-caution">Maximum caution</option>
+                            <option value="capital-preservation">Capital preservation</option>
+                            <optgroup label="Medium-risk">
+                                <option value="cautious">Cautious</option>
+                                <option value="balanced">Balanced</option>
+                                <optgroup label="Growth">
+                                    <option value="balanced-growth">Balanced / Growth</option>
+                                    <option value="growth">Growth</option>
+                                    <option value="maximum-growth">Maximum growth</option>
+                                </optgroup>
                             </optgroup>
-                </select>
+                    </select>
+                </div>
             </div>
-            <div class="profilebox2">
-                <p>Country:</p>
-                <select name="country" id="country">
-                    <optgroup label="Europe">
-                        <option value="united-kingdom">United Kingdom</option>
-                        <option value="france">France</option>
-                        <option value="germany">Germany</option>
-                        <option value="spain">Spain</option>
-                        <option value="italy">Italy</option>
-                        <optgroup label="North America">
-                            <option value="usa">USA</option>
-                            <option value="canada">Canada</option>
-                            <option value="mexico">Mexico</option>
-                            <optgroup label="Latin-America">
-                                <option value="brazil">Brazil</option>
-                                <option value="bolivia">Bolivia</option>
-                                <option value="argentina">Argentina</option>
-                                <optgroup label="Asia">
-                                    <option value="china">China</option>
-                                    <option value="india">India</option>
-                                    <option value="indonesia">Indonesia</option>
-                                    <option value="australia">Australia</option>
-                </select>
-                <p>Investment experience</p>
-                <select name="experience" id="experience">
-                    <option value="none">None</option>
-                    <option value="limited">Limited</option>
-                    <option value="basic">Basic Understanding</option>
-                    <option value="in-progress">Some experience</option>
-                    <option value="experienced">Experienced</option>
-                </select>
-                <input type="submit" id="save" value="Save" />
+            <div class="profilebox">
+                <div class="profilecontent">
+                    <p>Country:</p>
+                    <select name="country" id="country">
+                        <optgroup label="Europe">
+                            <option value="united-kingdom">United Kingdom</option>
+                            <option value="france">France</option>
+                            <option value="germany">Germany</option>
+                            <option value="spain">Spain</option>
+                            <option value="italy">Italy</option>
+                            <optgroup label="North America">
+                                <option value="usa">USA</option>
+                                <option value="canada">Canada</option>
+                                <option value="mexico">Mexico</option>
+                                <optgroup label="Latin-America">
+                                    <option value="brazil">Brazil</option>
+                                    <option value="bolivia">Bolivia</option>
+                                    <option value="argentina">Argentina</option>
+                                    <optgroup label="Asia">
+                                        <option value="china">China</option>
+                                        <option value="india">India</option>
+                                        <option value="indonesia">Indonesia</option>
+                                        <option value="australia">Australia</option>
+                                    </optgroup>
+                                </optgroup>
+                            </optgroup>
+                        </optgroup>
+                    </select>
+                </div>
+                <div class="profilecontent">
+                    <p>Investment experience</p>
+                    <select name="experience" id="experience">
+                        <option value="none">None</option>
+                        <option value="limited">Limited</option>
+                        <option value="basic">Basic Understanding</option>
+                        <option value="in-progress">Some experience</option>
+                        <option value="experienced">Experienced</option>
+                    </select>
+                </div>
             </div>
+            <input type="submit" id="save" value="Save" />
             <h1>Investment Experience</h1>
             <textarea id="past-experience" placeholder="Describe your past investment experience"></textarea>
             <input type="submit" id="save-blog" value="Save" />
