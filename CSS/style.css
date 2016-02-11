@@ -485,7 +485,7 @@ input[type="submit"] {
 .graph-container {
     width: 800px;
 }
-#performance-chart, #gdp-column, #trade-chart {
+#performance-chart, #gdp-column, #trade1-chart, #trade2-chart, #trade3-chart {
     width: 790px;
 }
 #asset-pie, #currency-pie {
@@ -534,7 +534,7 @@ input[type="submit"] {
     background: linear-gradient(180deg, white, darkgray);
 }
 
-.uk-gdp, .trade {
+.uk-gdp, .trade1, .trade2, .trade3 {
     display: none;
 }
 

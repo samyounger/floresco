@@ -39,7 +39,9 @@ function showValue(newValue) {
 $(document).ready(function() {
 
     //for the two pie charts asset & currency allocations
-    $('table.trade').highchartTable();
+    $('table.trade1').highchartTable();
+    $('table.trade2').highchartTable();
+    $('table.trade3').highchartTable();
     $('table.performance').highchartTable();
     $('table.asset-allocation').highchartTable();
     $('table.currency-allocation').highchartTable();
