@@ -41,9 +41,13 @@
         <nav class="main-nav">
             <ul class="primary-nav">
                 <li class="nav-profile"><a href="#">Your profile</a></li>
-                <li class="nav-florescocommunity"><a href="#">Floresco Community</a></li>
+                <li class="nav-florescocommunity"><a href="#">Floresco Community</a>
+                    <ul>
+                        <li class="nav-you"><a href="#">You</a></li>
+                        <li class="nav-world"><a href="#">World</a></li>
+                    </ul>
+                </li>
                 <li class="nav-portfolio"><a href="#">Portfolio analytics</a>
-                    <!-- the below should be a sub-list -->
                     <ul>
                         <li class="nav-overview"><a href="#">Overview</a></li>
                         <li class="nav-fixedinterest"><a href="#">Fixed Interest</a></li>
@@ -54,9 +58,9 @@
                         <li class="nav-performancerisk"><a href="#">Performance & Risk</a></li>
                     </ul>
                 </li>
+                <li class="nav-marketdata"><a href="#">Market Data</a></li>
                 <li class="nav-economics"><a href="#">Economics</a></li>
                 <li class="nav-trading"><a href="#">Trading</a></li>
-                <li class="nav-following"><a href="#">Following</a></li>
             </ul>
         </nav>
     </header>
@@ -141,8 +145,7 @@
             </div>
             <input type="submit" id="save" value="Save" />
             <h1>Investment Experience</h1>
-            <textarea id="past-experience" placeholder="Describe your past investment experience"></textarea>
-            <input type="submit" id="save-blog" value="Save" />
+            <p>I have worked as a professional stockbroker for 5 years, and 3 years as a discretionary investment manager. I am experienced at researching stocks (although I've never done it as a full-time job), managing a retail equity investment Fund, and managing a wide variety of client portfolios across the risk-range. I am comfortable managing portfolios of any risk-level, however having started my career in 2008 at the start of the financial crisis, I tend to lean towards more conservative investments - i.e. I prefer 'compounding' equity investments.</p>
         </div>
         <div class="florescocommunity">
             <h1><a href="#">Personal investment views</a></h1>
@@ -508,7 +511,7 @@
             <h1 ID="liquidassets-section"><a href="#">Liquid Assets</a></h1>
             <h1 ID="performancerisk-section"><a href="#">Performance & Risk</a></h1>
         </div>
-        <div class="economics">
+        <div class="marketdata">
             <h1><a href="#">Economics</a></h1>
             <div class="graph-container">
                 <div ID="gdp-column"></div>
@@ -592,11 +595,11 @@
                 </tbody>
             </table>
         </div>
-        <div class="trading">
+        <div class="economics">
             <h1><a href="#">Trading platform</a></h1>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sit dolorem perspiciatis esse repudiandae quos voluptas quasi eaque error beatae veritatis totam soluta illo asperiores aliquid, assumenda quia nemo animi sapiente.</p>
         </div>
-        <div class="following">
+        <div class="trading">
             <h1><a href="#">Investors you are following</a></h1>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi nisi cupiditate, tenetur soluta eos quam unde dolore officiis. Numquam deserunt, animi dolorum laudantium corrupti ad repellat deleniti debitis harum atque.</p>
         </div>

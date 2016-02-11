@@ -62,31 +62,31 @@ $(document).ready(function() {
             //remove the view class from others
             $('site-wrap .florescocommunity').removeClass('view');
             $('site-wrap .portfolio').removeClass('view');
+            $('site-wrap .marketdata').removeClass('view');
             $('site-wrap .economics').removeClass('view');
             $('site-wrap .trading').removeClass('view');
-            $('site-wrap .following').removeClass('view');
 
             $('.primary-nav .nav-florescocommunity').removeClass('selected');
             $('.primary-nav .nav-portfolio').removeClass('selected');
+            $('.primary-nav .nav-marketdata').removeClass('selected');
             $('.primary-nav .nav-economics').removeClass('selected');
             $('.primary-nav .nav-trading').removeClass('selected');
-            $('.primary-nav .nav-following').removeClass('selected');
 
             //make just the profile element visible
         } else {
             $('site-wrap .profile').addClass('view')
             $('site-wrap .florescocommunity').removeClass('view');
             $('site-wrap .portfolio').removeClass('view');
+            $('site-wrap .marketdata').removeClass('view');
             $('site-wrap .economics').removeClass('view');
             $('site-wrap .trading').removeClass('view');
-            $('site-wrap .following').removeClass('view');
 
             $('.primary-nav .nav-profile').addClass('selected');
             $('.primary-nav .nav-florescocommunity').removeClass('selected');
             $('.primary-nav .nav-portfolio').removeClass('selected');
+            $('.primary-nav .nav-marketdata').removeClass('selected');
             $('.primary-nav .nav-economics').removeClass('selected');
             $('.primary-nav .nav-trading').removeClass('selected');
-            $('.primary-nav .nav-following').removeClass('selected');
 
             $('.vanishing-title').addClass('vanish')
         }
@@ -98,30 +98,30 @@ $(document).ready(function() {
             //remove the view class from others
             $('site-wrap .profile').removeClass('view');
             $('site-wrap .portfolio').removeClass('view');
+            $('site-wrap .marketdata').removeClass('view');
             $('site-wrap .economics').removeClass('view');
             $('site-wrap .trading').removeClass('view');
-            $('site-wrap .following').removeClass('view');
 
             $('.primary-nav .nav-profile').removeClass('selected');
             $('.primary-nav .nav-portfolio').removeClass('selected');
+            $('.primary-nav .nav-marketdata').removeClass('selected');
             $('.primary-nav .nav-economics').removeClass('selected');
             $('.primary-nav .nav-trading').removeClass('selected');
-            $('.primary-nav .nav-following').removeClass('selected');
             //make just the profile element visible
         } else {
             $('site-wrap .florescocommunity').addClass('view')
             $('site-wrap .profile').removeClass('view');
             $('site-wrap .portfolio').removeClass('view');
+            $('site-wrap .marketdata').removeClass('view');
             $('site-wrap .economics').removeClass('view');
             $('site-wrap .trading').removeClass('view');
-            $('site-wrap .following').removeClass('view');
 
             $('.primary-nav .nav-florescocommunity').addClass('selected');
             $('.primary-nav .nav-profile').removeClass('selected');
             $('.primary-nav .nav-portfolio').removeClass('selected');
+            $('.primary-nav .nav-marketdata').removeClass('selected');
             $('.primary-nav .nav-economics').removeClass('selected');
             $('.primary-nav .nav-trading').removeClass('selected');
-            $('.primary-nav .nav-following').removeClass('selected');
 
             $('.vanishing-title').addClass('vanish')
         }
@@ -133,30 +133,65 @@ $(document).ready(function() {
             //remove the view class from others
             $('site-wrap .profile').removeClass('view');
             $('site-wrap .florescocommunity').removeClass('view');
+            $('site-wrap .marketdata').removeClass('view');
             $('site-wrap .economics').removeClass('view');
             $('site-wrap .trading').removeClass('view');
-            $('site-wrap .following').removeClass('view');
 
             $('.primary-nav .nav-profile').removeClass('selected');
             $('.primary-nav .nav-florescocommunity').removeClass('selected');
+            $('.primary-nav .nav-marketdata').removeClass('selected');
             $('.primary-nav .nav-economics').removeClass('selected');
             $('.primary-nav .nav-trading').removeClass('selected');
-            $('.primary-nav .nav-following').removeClass('selected');
             //make just the profile element visible
         } else {
             $('site-wrap .portfolio').addClass('view')
             $('site-wrap .profile').removeClass('view');
             $('site-wrap .florescocommunity').removeClass('view');
+            $('site-wrap .marketdata').removeClass('view');
             $('site-wrap .economics').removeClass('view');
             $('site-wrap .trading').removeClass('view');
-            $('site-wrap .following').removeClass('view');
 
             $('.primary-nav .nav-portfolio').addClass('selected');
             $('.primary-nav .nav-profile').removeClass('selected');
             $('.primary-nav .nav-florescocommunity').removeClass('selected');
+            $('.primary-nav .nav-marketdata').removeClass('selected');
             $('.primary-nav .nav-economics').removeClass('selected');
             $('.primary-nav .nav-trading').removeClass('selected');
-            $('.primary-nav .nav-following').removeClass('selected');
+
+            $('.vanishing-title').addClass('vanish')
+        }
+    });
+
+    $('.primary-nav .nav-marketdata').on('click', function(event) {
+        event.preventDefault();
+        if ($('site-wrap .marketdata').hasClass('view')) {
+            //remove the view class from others
+            $('site-wrap .profile').removeClass('view');
+            $('site-wrap .florescocommunity').removeClass('view');
+            $('site-wrap .portfolio').removeClass('view');
+            $('site-wrap .economics').removeClass('view');
+            $('site-wrap .trading').removeClass('view');
+
+            $('.primary-nav .nav-profile').removeClass('selected');
+            $('.primary-nav .nav-florescocommunity').removeClass('selected');
+            $('.primary-nav .nav-portfolio').removeClass('selected');
+            $('.primary-nav .nav-economics').removeClass('selected');
+            $('.primary-nav .nav-trading').removeClass('selected');
+            //make just the profile element visible
+        } else {
+            $('site-wrap .marketdata').addClass('view')
+            $('site-wrap .profile').removeClass('view');
+            $('site-wrap .florescocommunity').removeClass('view');
+            $('site-wrap .portfolio').removeClass('view');
+            $('site-wrap .economics').removeClass('view');
+            $('site-wrap .trading').removeClass('view');
+
+            $('.primary-nav .nav-marketdata').addClass('selected');
+            $('.primary-nav .nav-profile').removeClass('selected');
+            $('.primary-nav .nav-florescocommunity').removeClass('selected');
+            $('.primary-nav .nav-portfolio').removeClass('selected');
+            $('.primary-nav .nav-economics').removeClass('selected');
+            $('.primary-nav .nav-trading').removeClass('selected');
 
             $('.vanishing-title').addClass('vanish')
         }
@@ -169,34 +204,33 @@ $(document).ready(function() {
             $('site-wrap .profile').removeClass('view');
             $('site-wrap .florescocommunity').removeClass('view');
             $('site-wrap .portfolio').removeClass('view');
+            $('site-wrap .marketdata').removeClass('view');
             $('site-wrap .trading').removeClass('view');
-            $('site-wrap .following').removeClass('view');
 
             $('.primary-nav .nav-profile').removeClass('selected');
             $('.primary-nav .nav-florescocommunity').removeClass('selected');
             $('.primary-nav .nav-portfolio').removeClass('selected');
+            $('.primary-nav .nav-marketdata').removeClass('selected');
             $('.primary-nav .nav-trading').removeClass('selected');
-            $('.primary-nav .nav-following').removeClass('selected');
             //make just the profile element visible
         } else {
             $('site-wrap .economics').addClass('view')
             $('site-wrap .profile').removeClass('view');
             $('site-wrap .florescocommunity').removeClass('view');
             $('site-wrap .portfolio').removeClass('view');
+            $('site-wrap .marketdata').removeClass('view');
             $('site-wrap .trading').removeClass('view');
-            $('site-wrap .following').removeClass('view');
 
             $('.primary-nav .nav-economics').addClass('selected');
             $('.primary-nav .nav-profile').removeClass('selected');
             $('.primary-nav .nav-florescocommunity').removeClass('selected');
             $('.primary-nav .nav-portfolio').removeClass('selected');
+            $('.primary-nav .nav-marketdata').removeClass('selected');
             $('.primary-nav .nav-trading').removeClass('selected');
-            $('.primary-nav .nav-following').removeClass('selected');
 
             $('.vanishing-title').addClass('vanish')
         }
     });
-
     $('.primary-nav .nav-trading').on('click', function(event) {
         event.preventDefault();
         if ($('site-wrap .trading').hasClass('view')) {
@@ -204,63 +238,29 @@ $(document).ready(function() {
             $('site-wrap .profile').removeClass('view');
             $('site-wrap .florescocommunity').removeClass('view');
             $('site-wrap .portfolio').removeClass('view');
+            $('site-wrap .marketdata').removeClass('view');
             $('site-wrap .economics').removeClass('view');
-            $('site-wrap .following').removeClass('view');
 
             $('.primary-nav .nav-profile').removeClass('selected');
             $('.primary-nav .nav-florescocommunity').removeClass('selected');
             $('.primary-nav .nav-portfolio').removeClass('selected');
+            $('.primary-nav .nav-marketdata').removeClass('selected');
             $('.primary-nav .nav-economics').removeClass('selected');
-            $('.primary-nav .nav-following').removeClass('selected');
             //make just the profile element visible
         } else {
             $('site-wrap .trading').addClass('view')
             $('site-wrap .profile').removeClass('view');
             $('site-wrap .florescocommunity').removeClass('view');
             $('site-wrap .portfolio').removeClass('view');
+            $('site-wrap .marketdata').removeClass('view');
             $('site-wrap .economics').removeClass('view');
-            $('site-wrap .following').removeClass('view');
 
             $('.primary-nav .nav-trading').addClass('selected');
             $('.primary-nav .nav-profile').removeClass('selected');
             $('.primary-nav .nav-florescocommunity').removeClass('selected');
             $('.primary-nav .nav-portfolio').removeClass('selected');
+            $('.primary-nav .nav-marketdata').removeClass('selected');
             $('.primary-nav .nav-economics').removeClass('selected');
-            $('.primary-nav .nav-following').removeClass('selected');
-
-            $('.vanishing-title').addClass('vanish')
-        }
-    });
-    $('.primary-nav .nav-following').on('click', function(event) {
-        event.preventDefault();
-        if ($('site-wrap .following').hasClass('view')) {
-            //remove the view class from others
-            $('site-wrap .profile').removeClass('view');
-            $('site-wrap .florescocommunity').removeClass('view');
-            $('site-wrap .portfolio').removeClass('view');
-            $('site-wrap .economics').removeClass('view');
-            $('site-wrap .trading').removeClass('view');
-
-            $('.primary-nav .nav-profile').removeClass('selected');
-            $('.primary-nav .nav-florescocommunity').removeClass('selected');
-            $('.primary-nav .nav-portfolio').removeClass('selected');
-            $('.primary-nav .nav-economics').removeClass('selected');
-            $('.primary-nav .nav-trading').removeClass('selected');
-            //make just the profile element visible
-        } else {
-            $('site-wrap .following').addClass('view')
-            $('site-wrap .profile').removeClass('view');
-            $('site-wrap .florescocommunity').removeClass('view');
-            $('site-wrap .portfolio').removeClass('view');
-            $('site-wrap .economics').removeClass('view');
-            $('site-wrap .trading').removeClass('view');
-
-            $('.primary-nav .nav-following').addClass('selected');
-            $('.primary-nav .nav-profile').removeClass('selected');
-            $('.primary-nav .nav-florescocommunity').removeClass('selected');
-            $('.primary-nav .nav-portfolio').removeClass('selected');
-            $('.primary-nav .nav-economics').removeClass('selected');
-            $('.primary-nav .nav-trading').removeClass('selected');
 
             $('.vanishing-title').addClass('vanish')
         }

@@ -35,19 +35,16 @@ a {
 }
 
 /*********************************************************/
-.profile, .florescocommunity, .portfolio, .economics, .trading, .following {
+.profile, .florescocommunity, .portfolio, .marketdata, .economics, .trading {
     display: none;
     transform: scale(0);
     opacity: 0;
     transition: transform .3s ease-in-out, opacity .3s ease-in-out;
 }
 
-.nav-profile:hover, .nav-florescocommunity:hover, .nav-portfolio:hover, .nav-economics:hover, .nav-trading:hover, .nav-following:hover {
+.nav-profile:hover, .nav-florescocommunity:hover, .nav-portfolio:hover, .nav-marketdata:hover, .nav-economics:hover, .nav-trading:hover {
     background-color: #6A6A6A;
     border-radius: 10px;
-}
-.nav-equities:hover, .nav-bonds:hover, .nav-funds:hover {
-    background-color: #6A6A6A;
 }
 .primary-nav a {
     color: white;
@@ -371,7 +368,7 @@ footer {
 /*Ending formatting for the NAV bar*/
 .main-nav {
     position: fixed;
-    top: 15%
+    top: 5%
 }
 
 .main-nav ul {
@@ -422,9 +419,6 @@ site-wrap img {
 .profilebox {
     float: left;
     width: 290px;
-    border: 1px dashed blue;
-    /*border-left: 1px solid lightgrey;*/
-    /*border-right: 1px solid lightgrey;*/
 }
 .profilebox p {
     font-size: 15px;
@@ -479,7 +473,7 @@ input[type="submit"] {
 .portfolio thead {
     background: linear-gradient(180deg, white, darkgray);
 }
-.nav-portfolio ul a, .nav-portfolio ul li {
+.nav-portfolio ul a, .nav-portfolio ul li, .nav-florescocommunity ul a, .nav-florescocommunity ul li {
     font-size: 20px;
     height: 30px;
 }
